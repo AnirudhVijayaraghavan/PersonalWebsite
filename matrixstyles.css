@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: black;
+}
+
+canvas {
+    display: block;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+span {
+    background-color: black;
+    color: red;
+    position: fixed;
+    width: fit-content;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-left: 41%;
+    margin-right: 41%;
+    padding: 20px 20px;
+    right: 0px;
+    left: 0px;
+    top: 45%;
+    bottom: 45%;
+    font-size: 1.4vw;
+    animation: fadeIn 7s;
+
+}
+
+a {
+    color: red;
+}
