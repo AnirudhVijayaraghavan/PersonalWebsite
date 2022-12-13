@@ -1,0 +1,148 @@
+/* The below section uptil hr is for styling the horizontal line. */
+hr {
+    border-width: 10px;
+    border-style: none;
+    border-top-style: dotted;
+    width: 10%;
+    /* background-color: #EAF6F6; */
+    border-color: #F76B8A;
+  }
+/* The below section is for styling the main tags. */
+  h1 {
+    justify-content: center;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+  }
+
+  body {
+    margin: 0px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+  }
+
+  .storyp {
+    text-align: center;
+  }
+
+  /* The below section uptil .active is for the nav bar. */
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* background-color: #333; */
+    background-color: black;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
+/* The following is for the containers across all pages. */
+  .top-container {
+    /* display: flex;
+    display: grid; */
+    align-items: center;
+    background-color: #CFFFFE;
+}
+  .middle-container {
+    background-color: #F9F7D9;
+ }
+  .bottom-container {
+    background-color: #FCE2CE;
+  }
+ footer {
+    background-color: #FFC1F3;
+    text-align: center;
+ }
+ /* The following is for the font of the caption. */
+ .figcaption {
+    font-family: 'Dancing Script', cursive;
+ }
+ /* The following is to align contents properly in the What we offer section ? */
+ .wwo-row {
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+  }
+  .beerpic {
+    width: 25%;
+    float: left;
+    margin-right: 50px;
+  }
+  .bedpic {
+    margin-left: 70px;
+    width: 20%;
+    height: auto;
+    float: right;
+  }
+  .breakfastpic {
+    width: 25%;
+    float: left;
+    margin-right: 50px;
+  }
+  /* The following is to style the button in the Contact us! section. */
+  .mailbtn {
+    background-color: #988475;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 0%;
+  } 
+  /* The following will align the table in Tariff's page at the center. */
+  table {
+    margin-left:auto;
+    margin-right:auto;
+  }
+  /* The following is to style the button in the Tariff and book section.active */
+  .rickrollbtn {
+    background-color: #1c87c9;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+    border: none;
+    color: #eeeeee;
+    cursor: pointer;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+  }
+  @keyframes glowing {
+    0% {
+      background-color: #18a4d3;
+      box-shadow: 0 0 5px #149ccd;
+    }
+    50% {
+      background-color: #1f49df;
+      box-shadow: 0 0 20px #091087;
+    }
+    100% {
+      background-color: #6722c0;
+      box-shadow: 0 0 5px #7f0b9f;
+    }
+  }
+  .rickrollbtn {
+    animation: glowing 2500ms infinite;
+  }
