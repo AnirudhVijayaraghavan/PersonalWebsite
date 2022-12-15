@@ -1,13 +1,14 @@
 // Code to add functionalities and style to progress bar and back to home page button.
-const showOnPx = 100;
+const showOnPx = 150;
 const backToTopButton = document.querySelector(".back-to-top");
+const footerarea = document.querySelector("footer");
 const pageProgressBar = document.querySelector(".progress-bar");
 
 const scrollContainer = () => {
     return document.documentElement || document.body;
 };
 
-const goToTop = () => {
+const goToHomePage = () => {
     window.location.href = "../index.html";
 };
 
@@ -23,12 +24,14 @@ document.addEventListener("scroll", () => {
 
     if (scrollContainer().scrollTop > showOnPx) {
         backToTopButton.classList.remove("hidden");
+        footerarea.classList.remove("hidden");
     } else {
         backToTopButton.classList.add("hidden");
+        footerarea.classList.add("hidden");
     }
 });
 
-backToTopButton.addEventListener("click", goToTop);
+backToTopButton.addEventListener("click", goToHomePage);
 
 // Code to embed google map API.
 function myMap() {

@@ -117,9 +117,14 @@ li a:hover {
 
 footer {
   position: fixed;
-  left: 50%;
   bottom: 0;
   color: white;
+  background-color: black; 
+  text-align: center;
+  width: 80%;
+
+  opacity: 100%;
+  transition: opacity 0.5s;
 }
 
 h3 {
@@ -368,8 +373,8 @@ back to top button. */
 } */
 .back-to-top {
   position: fixed;
-  right: 2rem;
-  bottom: 2rem;
+  right: 1rem;
+  bottom: 4rem;
   border-radius: 100%;
   background: white;
   padding: 0.5rem;
