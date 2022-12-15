@@ -6,12 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anirudh's Portfolio</title>
+    <!-- Adding FAVICON. -->
     <link rel="icon" href="icons8-year-of-ox-96.png">
     <link rel="stylesheet" href="styles.css">
+    <!-- Adding Google font cdn. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Quicksand:wght@300&display=swap"
         rel="stylesheet">
+
+    <!-- script to install ScrollMagic jquery plugin. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 </head>
 
 <body>
@@ -42,9 +49,9 @@
     <div class="rightpane">
 
         <br><br>
-        <h1>Hi !</h1>
+        <h1 class="scrollFade">Hi !</h1>
         <img class="mainprofilephoto" src="IMG_20181223_074252.jpg" alt="Main profile photo">
-        <h2>Welcome to my page.</h2>
+        <h2 class="scrollFade">Welcome to my page.</h2>
         <a name="aboutme"></a>
         <h3 id="centerh3">About me.</h3>
         <p>I like long walks on the beach, playing the piano, and
@@ -147,17 +154,17 @@
         <div class="skillscont">
             <dl class="dlheading">IBM Mainframes platform.</dl>
             <dt>
-                <img class="skilliconpics" src="zos.png" alt="z/os"> Z/OS&emsp; 
-                <img class="skilliconpics" src="cobol.png" alt="cobol"> COBOL &emsp; 
+                <img class="skilliconpics" src="zos.png" alt="z/os"> Z/OS&emsp;
+                <img class="skilliconpics" src="cobol.png" alt="cobol"> COBOL &emsp;
                 <img class="skilliconpics" src="JCL.png" alt="jcl"> JCL & REXX Scripts
             </dt>
             <br>
 
             <dl class="dlheading">Programming Languages.</dl>
             <dt>
-                <img class="skilliconpics" src="java.png" alt="java"> Java&emsp;&nbsp; 
-                <img class="skilliconpics" src="html5.png" alt="html5"> HTML5&emsp;&nbsp; 
-                <img class="skilliconpics" src="css.png" alt="css"> CSS &emsp;&nbsp; 
+                <img class="skilliconpics" src="java.png" alt="java"> Java&emsp;&nbsp;
+                <img class="skilliconpics" src="html5.png" alt="html5"> HTML5&emsp;&nbsp;
+                <img class="skilliconpics" src="css.png" alt="css"> CSS &emsp;&nbsp;
                 <img class="skilliconpics" src="jscript.png" alt="javascript"> Javascript
                 <img class="skilliconpics" src="python.png" alt="python"> Python
             </dt>
@@ -165,8 +172,8 @@
 
             <dl class="dlheading">Softwares.</dl>
             <dt>
-                <img class="skilliconpics" src="snow.png" alt="snow"> <abbr title="ServiceNow">Snow</abbr>&ensp; 
-                <img class="skilliconpics" src="vscode.png" alt="vscode"> VSCode &ensp;&nbsp; 
+                <img class="skilliconpics" src="snow.png" alt="snow"> <abbr title="ServiceNow">Snow</abbr>&ensp;
+                <img class="skilliconpics" src="vscode.png" alt="vscode"> VSCode &ensp;&nbsp;
                 <img class="skilliconpics" src="intellij.png" alt="intellij"> IntelliJ &nbsp;
                 <img class="skilliconpics" src="atom.png" alt="atom"> Atom&emsp;&ensp;&nbsp;
                 <img class="skilliconpics" src="git.png" alt="git"> Git
@@ -247,7 +254,8 @@
     </div>
 
     <script src="mainscript.js" type="text/javascript"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAc9OPcoStxm8lR03sM9v0fELZGiQTYCWA&callback=myMap"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAc9OPcoStxm8lR03sM9v0fELZGiQTYCWA&callback=myMap"></script>
 
 </body>
 
