@@ -19,22 +19,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
 </head>
 
 <body>
     <header>
-
-        <nav>
-            <ul>
-                <li><a href="#aboutme">About me.</a></li>
-                <li><a href="#mystory">My Story.</a></li>
-                <li><a href="#education">Education.</a></li>
-                <li><a href="#workexp">My Work Experience.</a></li>
-                <li><a href="#skills">My Skills.</a></li>
-                <li><a href="#projects">My Projects / Certifications.</a></li>
-                <li><a href="#contactme">Contact me.</a></li>
-            </ul>
-        </nav>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="openorclose()">×</a>
+            <a href="#aboutme">About me.</a>
+            <a href="#mystory">My Story.</a>
+            <a href="#education">Education.</a>
+            <a href="#workexp">My Work Experience.</a>
+            <a href="#skills">My Skills.</a>
+            <a href="#projects">My Projects / Certifications.</a>
+            <a href="#contactme">Contact me.</a>
+        </div>
 
         <div class="progress-bar" />
         <button class="back-to-top hidden">
@@ -46,7 +45,8 @@
         <div class="progress-bar" />
     </header>
 
-    <div class="rightpane">
+    <div id="main">
+        <button class="openbtn" onclick="openorclose()">☰</button>
         <br><br>
         <h1 class="scrollFade">Hi !</h1>
         <img class="mainprofilephoto" src="PicturesIcons/IMG_20181223_074252.jpg" alt="Main profile photo">
@@ -61,11 +61,12 @@
             Current favourite playlist :
 
         </p>
-        <iframe width="560" height="315"
+        <iframe width="100%" height="315"
             src="https://www.youtube.com/embed/videoseries?list=PLSVoghokeyRyriD-xnwjNfPw1z_H9wgR2"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+            allowfullscreen>
+        </iframe>
         <p class="scrollFade">
             Current location : Roxbury, Boston, MA.
         </p>
@@ -93,27 +94,28 @@
         <p>
         <div class="educationcont">
             <dl class="scrollFade dlheading">College</dl>
-            <dt class="scrollFade">Northeastern
-                University&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;|
-                Boston, USA&emsp;| September 2022 - Present</dt>
+            <dt class="scrollFade">
+                Northeastern&nbsp;University&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;|&nbsp;Boston,&nbsp;USA&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;September,&nbsp;2022&nbsp;-&nbsp;Present
+            </dt>
             <dd class="scrollFade">Master of Science, Software Engineering Systems</dd>
             <br>
-            <dt class="scrollFade">SRM Institute of Science and
-                Technology&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;| Chennai, India | August,
-                2014 - May 2018</dt>
+            <dt class="scrollFade">
+                SRM&nbsp;Institute&nbsp;of&nbsp;Science&nbsp;and&nbsp;Technology&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;|&nbsp;Chennai,&nbsp;India&nbsp;|&nbsp;August,&nbsp;2014&nbsp;-&nbsp;May,&nbsp;2018
+            </dt>
             <dd class="scrollFade">Bachelor of Technology, Electrical and Electronics Engineering. GPA : 3.2/4</dd>
 
             <dl class="scrollFade dlheading">Schooling</dl>
-            <dt class="scrollFade">P.S.B.B - Padma Seshadri Bala Bhavan, Senior Secondary School | Chennai, India |
-                September, 2012 - May
-                2014</dt>
+            <dt class="scrollFade">P.S.B.B&nbsp;-&nbsp;Padma&nbsp;Seshadri&nbsp;Bala&nbsp;Bhavan,
+                Senior&nbsp;Secondary&nbsp;School
+                |&nbsp;Chennai,&nbsp;India&nbsp;|&nbsp;September,&nbsp;2012&nbsp;-&nbsp;May,&nbsp;2014</dt>
             <dd class="scrollFade">Grades 11 - 12 CBSE Board, Scored 75%. Electives : Maths, Physics, Chemistry,
                 Informatics Practices.
             </dd>
             <br>
-            <dt class="scrollFade">G.I.I.S - Global Indian International School
-                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;| Singapore&nbsp;city | circa 2001 - August
-                2012</dt>
+            <dt class="scrollFade">G.I.I.S - Global&nbsp;Indian&nbsp;International&nbsp;School
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
+                |&nbsp;Singapore&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;September,&nbsp;2001&nbsp;-&nbsp;August,&nbsp;2012
+            </dt>
             <dd class="scrollFade">Grades 1 - 10, CBSE Board, CGPA : 9/10.</dd>
 
         </div>
@@ -124,7 +126,8 @@
         <h3 class="scrollFade">Work experience.</h3>
         <p class="scrollFade">
         <div class="wecont">
-            <dl class="scrollFade dlheading">Infosys Ltd. | Designation : Technology Analyst | August 2018 - May 2022
+            <dl class="scrollFade dlheading">Infosys&nbsp;Ltd.&nbsp;|
+                Designation&nbsp;:&nbsp;Technology Analyst | August&nbsp;2018&nbsp;-&nbsp;May&nbsp;2022
             </dl>
             <dt class="scrollFade">Generic Training
                 &nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;|
@@ -173,31 +176,32 @@
         <div class="skillscont">
             <dl class="scrollFade dlheading">IBM Mainframes platform.</dl>
             <dt class="scrollFade">
-                <img class="skilliconpics" src="PicturesIcons/zos.png" alt="z/os"> Z/OS&emsp;
-                <img class="skilliconpics" src="PicturesIcons/cobol.png" alt="cobol"> COBOL &emsp;
-                <img class="skilliconpics" src="PicturesIcons/JCL.png" alt="jcl"> JCL & REXX Scripts &ensp;&ensp;
-                <img class="skilliconpics" src="PicturesIcons/ibmdb2.png" alt="ibmdb2"> IBM DB2
+                <img class="skilliconpics" src="PicturesIcons/zos.png" alt="z/os">&nbsp;Z/OS&emsp;
+                <img class="skilliconpics" src="PicturesIcons/cobol.png" alt="cobol">&nbsp;COBOL &emsp;
+                <img class="skilliconpics" src="PicturesIcons/JCL.png" alt="jcl">&nbsp;JCL&nbsp;&&nbsp;REXX&nbsp;Scripts
+                &ensp;&ensp;
+                <img class="skilliconpics" src="PicturesIcons/ibmdb2.png" alt="ibmdb2">&nbsp;IBM&nbsp;DB2
             </dt>
             <br>
 
             <dl class="scrollFade dlheading">Programming Languages.</dl>
             <dt class="scrollFade">
-                <img class="skilliconpics" src="PicturesIcons/java.png" alt="java"> Java&emsp;&nbsp;
-                <img class="skilliconpics" src="PicturesIcons/html5.png" alt="html5"> HTML5&emsp;&nbsp;
-                <img class="skilliconpics" src="PicturesIcons/css.png" alt="css"> CSS &emsp;&nbsp;
-                <img class="skilliconpics" src="PicturesIcons/jscript.png" alt="javascript"> Javascript&ensp;
-                <img class="skilliconpics" src="PicturesIcons/python.png" alt="python"> Python
+                <img class="skilliconpics" src="PicturesIcons/java.png" alt="java">&nbsp;Java&emsp;&nbsp;
+                <img class="skilliconpics" src="PicturesIcons/html5.png" alt="html5">&nbsp;HTML5&emsp;&nbsp;
+                <img class="skilliconpics" src="PicturesIcons/css.png" alt="css">&nbsp;CSS &emsp;&nbsp;
+                <img class="skilliconpics" src="PicturesIcons/jscript.png" alt="javascript">&nbsp;Javascript&ensp;
+                <img class="skilliconpics" src="PicturesIcons/python.png" alt="python">&nbsp;Python
             </dt>
             <br>
 
             <dl class="scrollFade dlheading">Softwares.</dl>
             <dt class="scrollFade">
-                <img class="skilliconpics" src="PicturesIcons/snow.png" alt="snow"> <abbr
+                <img class="skilliconpics" src="PicturesIcons/snow.png" alt="snow">&nbsp;<abbr
                     title="ServiceNow">Snow</abbr>&ensp;
-                <img class="skilliconpics" src="PicturesIcons/vscode.png" alt="vscode"> VSCode &ensp;&nbsp;
-                <img class="skilliconpics" src="PicturesIcons/intellij.png" alt="intellij"> IntelliJ &nbsp;
-                <img class="skilliconpics" src="PicturesIcons/atom.png" alt="atom"> Atom&emsp;&ensp;&nbsp;&ensp;
-                <img class="skilliconpics" src="PicturesIcons/git.png" alt="git"> Git
+                <img class="skilliconpics" src="PicturesIcons/vscode.png" alt="vscode">&nbsp;VSCode &ensp;&nbsp;
+                <img class="skilliconpics" src="PicturesIcons/intellij.png" alt="intellij">&nbsp;IntelliJ &nbsp;
+                <img class="skilliconpics" src="PicturesIcons/atom.png" alt="atom">&nbsp;Atom&emsp;&ensp;&nbsp;&ensp;
+                <img class="skilliconpics" src="PicturesIcons/git.png" alt="git">&nbsp;Git
             </dt>
             <br>
         </div>
@@ -221,7 +225,7 @@
 
             <br><br><br>
             <dl class="scrollFade dlheading">My Certifications.</dl>
-            <dd>
+            <!-- <dd>
                 <div class="scrollFade gallery"><img class="mainimg" src="PicturesIcons/python_linkedin.png" alt=""><img
                         class="galleryhover" src="PicturesIcons/python_linkedin.png" alt="">
                     <figcaption>Python Linkedin assessment.</figcaption>
@@ -239,7 +243,7 @@
                     <figcaption>Google IT support coursera Certification.</figcaption>
                 </div>
 
-            </dd>
+            </dd> -->
             <br>
 
         </div>
@@ -259,9 +263,9 @@
             <br>
             <dt class="scrollFade">Alternatively, you can shoot me an e-mail
                 <a class="mailbtn" href="mailto:anirudh1997@hotmail.com">
-                    <abbr title="This will redirect you to your computer's mailing app.">here,</abbr>
-                </a> or call me <a class="mailbtn" href="tel:+18579919949">
-                    <abbr title="This will redirect you to your computer's mailing app."> here.</abbr>
+                    <abbr title="This will redirect you to your computer's mailing app.">here</abbr>
+                </a>, or call me <a class="mailbtn" href="tel:+18579919949">
+                    <abbr title="This will redirect you to your computer's or phone's telephone app.">here</abbr>.
                 </a>
             </dt>
             <br>
@@ -270,18 +274,21 @@
         </p>
         <br><br>
         <footer>
-            Handcrafted with <span style="font-size:25px; color: red;">&#9829;</span> in Boston.<br>
+            <span id="footerspan">
+                Handcrafted with <span style="font-size:25px; color: red;">&#9829;</span> in Boston.<br>
 
-            &copy; Copyright Anirudh's Portfolio Website 2022
+                &copy; Copyright Anirudh's Portfolio Website 2022
+            </span>
+
         </footer>
 
         <!-- <a href="Lecture2Matrix.html" class="backtohomepagebtn">← Home page.</a> -->
     </div>
 
     <script src="scripts/mainscript.js" type="text/javascript"></script>
-    <!-- <script
+    <script
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAc9OPcoStxm8lR03sM9v0fELZGiQTYCWA&callback=myMap">
-    </script> -->
+    </script>
 </body>
 
 </html>
