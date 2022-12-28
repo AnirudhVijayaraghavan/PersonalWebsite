@@ -1,6 +1,7 @@
 // Code to add functionalities and style to progress bar and back to home page button.
 const showOnPx = 150;
 const backToTopButton = document.querySelector(".back-to-top");
+const resumeButton = document.querySelector(".resume");
 const footerarea = document.querySelector("footer");
 const pageProgressBar = document.querySelector(".progress-bar");
 
@@ -24,9 +25,11 @@ document.addEventListener("scroll", () => {
 
   if (scrollContainer().scrollTop > showOnPx) {
     backToTopButton.classList.remove("hidden");
+    resumeButton.classList.remove("hidden");
     footerarea.classList.remove("hidden");
   } else {
     backToTopButton.classList.add("hidden");
+    resumeButton.classList.add("hidden");
     footerarea.classList.add("hidden");
   }
 });

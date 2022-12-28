@@ -1,0 +1,21 @@
+Certificates section - 
+1. complete one more (preferrably DSA or UIUX from coursera / udemy.)
+2. redesign the certificate section.
+3. Certificates currently doing and need to be done : 
+ - 2022 Python bootcamp - udemy - completed.
+ - Google IT support - coursera - completed.
+ - Google UIUX - coursera
+ - ZtM Full stack development - Udemy
+ 
+ - Data structures and algorithms - yet to start
+
+Projects section - 
+1. Add PERN stack proteinandme project.
+2. Add REact / bootstrap personal blog website.
+
+My story section - 
+1. Make background transparent and show cool picture as background while scrolling text, like a real cool website.
+2. Update the content of my story section.
+
+About me section - 
+1. Redesign the about me section to have current details, in a more creative manner.
