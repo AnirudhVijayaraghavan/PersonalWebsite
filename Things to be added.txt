@@ -6,16 +6,16 @@ Certificates section -
  - Google IT support - coursera - completed.
  - Google UIUX - coursera
  - ZtM Full stack development - Udemy
- 
  - Data structures and algorithms - yet to start
 
 Projects section - 
 1. Add PERN stack proteinandme project.
 2. Add REact / bootstrap personal blog website.
+3. Add note taking site / background generating site.
+4. Add mobile app project (calorie tracking, / fitness set s& reps counter, / expense tracker).
 
 My story section - 
-1. Make background transparent and show cool picture as background while scrolling text, like a real cool website.
-2. Update the content of my story section.
+1. Update the content of my story section.
 
 About me section - 
 1. Redesign the about me section to have current details, in a more creative manner.

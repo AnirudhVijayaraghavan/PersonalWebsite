@@ -3,37 +3,196 @@ body {
   margin: 0;
   font-family: "Segoe UI", Arial, Helvetica, Sans Serif;
   color: white;
+  animation: fadeInAnimation ease 6.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
   /* display: grid;
   grid-template-columns: auto 0px;  */
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 hr {
   color: red;
 }
 
+.hrforaboutme {
+  border-width: 10px;
+  border-style: none;
+  border-top-style: dotted;
+  width: 10%;
+  /* background-color: #EAF6F6; */
+  border-color: red;
+}
+
+/* The following is to animate the box container circle classes. */
+.box {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+}
+
+.container {
+  height: 15px;
+  width: 105px;
+  display: flex;
+  position: relative;
+  align-items: center;
+
+
+}
+
+.container .circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: red;
+  animation: move 1s linear 0s infinite;
+  margin-right: 30px;
+
+
+}
+
+.container .circle:first-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: grow 1s linear 0s infinite;
+}
+
+.container .circle:last-child {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 0;
+  animation: grow 1s linear 0s infinite reverse;
+}
+
+.box-reverse {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+}
+
+.container-reverse {
+  height: 15px;
+  width: 105px;
+  display: flex;
+  position: relative;
+  align-items: center;
+
+
+}
+
+.container-reverse .circle-reverse {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: red;
+  animation: moveReverse 1s linear 0s infinite;
+  margin-right: 30px;
+
+
+}
+
+.container-reverse .circle-reverse:first-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: grow 1s linear 0s infinite reverse;
+}
+
+.container-reverse .circle-reverse:last-child {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 0;
+  animation: grow 1s linear 0s infinite;
+}
+
+@keyframes grow {
+  from {
+    transform: scale(0, 0);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0px)
+  }
+
+  to {
+    transform: translateX(45px)
+  }
+}
+
+@keyframes moveReverse {
+  from {
+    transform: translateX(45px)
+  }
+
+  to {
+    transform: translateX(0px)
+  }
+}
+
 /* The following is to center the main image. */
 .mainprofilephoto {
   display: block;
-  margin-left: auto;
+  margin-left: 15%;
   margin-right: auto;
-  width: 25%;
+  width: 15%;
+  border-radius: 0%;
+  transition: transform .2s ease-in-out;
+  padding: 20px;
+}
+
+.mainprofilephotoright {
+  display: block;
+  margin-left: auto;
+  margin-right: 10%;
+  width: 20%;
   border-radius: 0%;
   transition: transform .2s ease-in-out;
   padding: 20px;
 }
 
 .mainprofilephoto:hover {
-  -ms-transform: scale(1.3);
+  -ms-transform: scale(1.2);
   /* IE 9 */
-  -webkit-transform: scale(1.3);
+  -webkit-transform: scale(1.2);
   /* Safari 3-8 */
-  transform: scale(1.3);
+  transform: scale(1.2);
+}
+
+.mainprofilephotoright:hover {
+  -ms-transform: scale(1.4);
+  /* IE 9 */
+  -webkit-transform: scale(1.4);
+  /* Safari 3-8 */
+  transform: scale(1.4);
 }
 
 /* The following is to animate and style the header and nav bar to slide in left. */
 @keyframes slideInLeft {
   0% {
-    transform: translateX(-80%);
+    transform: translateX(-60%);
   }
 
   100% {
@@ -56,11 +215,11 @@ h1 {
   text-align: center;
   font-family: 'Dancing Script', cursive;
   font-family: 'Quicksand', sans-serif;
-  animation-duration: 6s;
+  animation-duration: 3s;
   animation-timing-function: ease-in-out;
   animation-delay: 0s;
   animation-iteration-count: 1;
-  /* animation-name: slideInLeft; */
+  animation-name: slideInLeft;
   padding: 50px;
   margin-top: 0px;
 }
@@ -114,6 +273,7 @@ li a:hover {
 /* The following is to style the right pane (right section with all other details). */
 .rightpane {
   margin-left: 20%;
+  z-index: 0;
 }
 
 footer {
@@ -135,6 +295,8 @@ h3 {
 }
 
 #centerh3 {
+  margin-left: 50px;
+  margin-right: 50px;
   text-align: center;
 }
 
@@ -178,6 +340,12 @@ p {
 
 .contactmecont dt {
   text-align: center;
+}
+
+/* The following is to style the educationcont logos. */
+.educationcontlogoleft {
+  width: 100px;
+  background: transparent;
 }
 
 /* The following is for DL tag styling.  */
@@ -267,10 +435,47 @@ figcaption {
 }
 
 /* The following is to style the webpage in various screen sizes, using media query. */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
   .openbtn {
     display: none;
   }
+
+  .mainprofilephoto {
+    display: block;
+    margin-left: 5%;
+    margin-right: auto;
+    width: 12%;
+    border-radius: 0%;
+    transition: transform .2s ease-in-out;
+    padding: 20px;
+  }
+
+  .mainprofilephotoright {
+    display: block;
+    margin-left: auto;
+    margin-right: 5%;
+    width: 15%;
+    border-radius: 0%;
+    transition: transform .2s ease-in-out;
+    padding: 20px;
+  }
+
+  .mainprofilephoto:hover {
+    -ms-transform: scale(1.2);
+    /* IE 9 */
+    -webkit-transform: scale(1.2);
+    /* Safari 3-8 */
+    transform: scale(1.2);
+  }
+
+  .mainprofilephotoright:hover {
+    -ms-transform: scale(1.4);
+    /* IE 9 */
+    -webkit-transform: scale(1.4);
+    /* Safari 3-8 */
+    transform: scale(1.4);
+  }
+
 }
 
 /* The following is to make the scrolling in page through nav bar 
@@ -382,6 +587,7 @@ back to top button. */
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 2;
 }
 
 /* The following CSS is required for ScrollFade.js */
@@ -453,10 +659,12 @@ back to top button. */
   padding: 10px 15px;
   border: none;
   background-color: transparent;
+  transition: 0.3s;
 }
 
 .openbtn:hover {
-  background-color: #444;
+  /* background-color: black; */
+  transform: scale(1.2)
 }
 
 #main {
@@ -478,12 +686,33 @@ footer {
   position: absolute;
 }
 
-/* The following is to keep the background image of My story section fixed using background attachment property. */
-
-.fixed-bg {
+/* The following is to keep the background image of various sections fixed using background attachment property. */
+.fixed-bg-we {
   margin: 0 0;
-  background-image: url("../PicturesIcons/casey-horner-RmoWqDCqN2E-unsplash.jpg");
+  background-image: url("../PicturesIcons/leyre-71SHXwBLp5w-unsplash.jpg");
+  min-height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 30px;
+}
+
+.fixed-bg-story {
+  margin: 0 0;
+  background-image: url("../PicturesIcons/rhoda-alex-2L2XCJbRgxc-unsplash.jpg");
   min-height: 300px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 30px;
+}
+
+.fixed-bg-initial {
+  margin: 0 0;
+  background-image: url("../PicturesIcons/IMG_20181223_074252.jpg");
+  min-height: 600px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

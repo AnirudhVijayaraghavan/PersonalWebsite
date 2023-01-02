@@ -98,6 +98,7 @@ function openNav() {
   document.getElementsByClassName("openbtn")[0].style.display = "none";
   document.getElementsByClassName("openbtn")[0].style.opacity = "100%";
   document.getElementsByTagName("footer")[0].style.width = "80%";
+  document.getElementsByClassName("mainprofilephoto")[0].style.marginLeft = "2%";
 
 }
 
@@ -107,6 +108,7 @@ function closeNav() {
   document.getElementById("main").style.marginLeft = "0";
   document.getElementsByClassName("openbtn")[0].style.display = "inline";
   document.getElementsByTagName("footer")[0].style.width = "100%";
+  document.getElementsByClassName("mainprofilephoto")[0].style.marginLeft = "15%";
 }
 
 function openorclose() {
@@ -121,7 +123,7 @@ function openorclose() {
 // The following is to fix the bug where hamburger icon does not respond to media query if used
 // even once.
 function myFunction(x) {
-  if (x.matches) { 
+  if (x.matches) {
     document.getElementsByClassName("openbtn")[0].style.display = "none";
   } else {
     document.getElementsByClassName("openbtn")[0].style.display = "inline";
@@ -130,4 +132,4 @@ function myFunction(x) {
 
 var x = window.matchMedia("(max-width: 800px)")
 myFunction(x)
-x.addListener(myFunction) 
+x.addListener(myFunction)
