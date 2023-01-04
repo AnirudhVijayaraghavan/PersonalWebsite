@@ -719,3 +719,26 @@ footer {
   background-size: cover;
   padding-bottom: 30px;
 }
+
+/*  */
+.box1 {
+  width: 200px;
+  height: 200px;
+  background-color: #64B6AC;
+  text-align: center;
+  line-height: 200px;
+  margin: 50em 0;
+  margin-left: calc(50% - 100px);
+  transition: transform 0.5s, opacity 0.5s;
+  color: #fff;
+  font-weight: bold;
+}
+
+.box1.left {
+  transform: translateX(-200px);
+  opacity: 0;
+}
+.box1.active{
+  transform: translateX(0);
+  opacity: 1;
+}
