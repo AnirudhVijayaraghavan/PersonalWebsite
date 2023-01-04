@@ -19,7 +19,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <style>
 
+    </style>
 </head>
 
 <body>
@@ -36,68 +38,147 @@
         </div>
 
         <div class="progress-bar" />
+        <button class="resume hidden">
+            <abbr title="Click here to download my resume.">
+                <a href="https://anirudhvijayaraghavan.github.io/PersonalWebsite/sheets/scripts/Anirudh's Resume_22-11-03.PDF" download=""><svg fill="#000000" width="800px"
+                        height="800px" class="resume-icon" viewBox="0 0 16 16" id="download-16px"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path id="Path_135" data-name="Path 135"
+                            d="M38-38.5v5A2.5,2.5,0,0,1,35.5-31h-11A2.5,2.5,0,0,1,22-33.5v-5A2.5,2.5,0,0,1,24.5-41h2a.5.5,0,0,1,.5.5.5.5,0,0,1-.5.5h-2A1.5,1.5,0,0,0,23-38.5v5A1.5,1.5,0,0,0,24.5-32h11A1.5,1.5,0,0,0,37-33.5v-5A1.5,1.5,0,0,0,35.5-40h-2a.5.5,0,0,1-.5-.5.5.5,0,0,1,.5-.5h2A2.5,2.5,0,0,1,38-38.5Zm-11.354.646a.5.5,0,0,0,0,.708l3,3a.518.518,0,0,0,.163.109A.5.5,0,0,0,30-34a.5.5,0,0,0,.191-.038.518.518,0,0,0,.163-.109l3-3a.5.5,0,0,0,0-.708.5.5,0,0,0-.708,0L30.5-35.707V-46.5A.5.5,0,0,0,30-47a.5.5,0,0,0-.5.5v10.793l-2.146-2.147A.5.5,0,0,0,26.646-37.854Z"
+                            transform="translate(-22 47)" />
+                    </svg></a>
+            </abbr>
+        </button>
         <button class="back-to-top hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 11l5-5m0 0l5 5m-5-5v12" />
-            </svg>
+            <abbr title="Back to landing page.">
+                <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M7 11l5-5m0 0l5 5m-5-5v12" />
+                </svg></abbr>
         </button>
         <div class="progress-bar" />
     </header>
 
     <div id="main">
         <button class="openbtn" onclick="openorclose()">☰</button>
-        <br><br>
-        <h1 class="scrollFade">Hi !</h1>
-        <img class="mainprofilephoto" src="PicturesIcons/IMG_20181223_074252.jpg" alt="Main profile photo">
-        <h2 class="scrollFade">Welcome to my page.</h2>
-        <a name="aboutme"></a>
+
+        <div class="fixed-bg-initial">
+
+            <h1 class="scrollFade">Hi !</h1>
+            <img class="mainprofilephoto" src="PicturesIcons/20191027_081104.jpg" alt="Main profile photo"
+                style="border-style: solid; border-style: none solid solid none;">
+            <img class="mainprofilephotoright" src="PicturesIcons/IMG-20220818-WA0020.jpg" alt="Main profile photo"
+                style="border-style: solid; border-style: none none solid solid;">
+            <h2 class="scrollFade">Welcome to my page.</h2>
+            <a name="aboutme"></a>
+            <br>
+        </div>
+
+        <hr class="scrollFade" style="margin: 0 auto;">
+        <br>
+
+
         <h3 class="scrollFade" id="centerh3">About me.</h3>
-        <p class="scrollFade">I like long walks on the beach, playing the piano, and
+
+        <!-- <p class="scrollFade">I like long walks on the beach, playing the piano, and
             <abbr title="Benching, Deadlifting, Squatting, and Military Pressing ;)">BDSM</abbr>.
 
+        </p> -->
+        <p class="scrollFade" style="text-align: center;">Anirudh Vijayaraghavan <br>
         </p>
-        <p>
+        <!-- <hr class="hrforaboutme"> -->
+        <div class="scrollFade box">
+            <div class="container">
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+            </div>
+        </div>
+        <p class="scrollFade" style="text-align: center;">Currently pursuing a Master's in Software Engineering
+            at
+            Northeastern University, Boston</p>
+        <div class="scrollFade box-reverse">
+            <div class="container-reverse">
+                <span class="circle-reverse"></span>
+                <span class="circle-reverse"></span>
+                <span class="circle-reverse"></span>
+                <span class="circle-reverse"></span>
+            </div>
+        </div>
+        <p class="scrollFade" style="text-align: center;">ex-Technology Analyst, Infosys Ltd. | Mainframes Tech. Stack
+            (Developer,
+            QA, Maintenance)
+        </p>
+        <div class="scrollFade box">
+            <div class="container">
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+                <span class="circle"></span>
+            </div>
+        </div>
+        <p class="scrollFade" style="text-align: center;">IBM Mainframe's platform | Full-stack web developer | React.js
+            | Java </p>
+
+        <br>
+        <p class="scrollFade">
+            I am a focused Systems Engineer with over 3 years of experience in supporting, developing, improving and
+            automating
+            various processes in a
+            myriad different IT applications. Adept at collaborating with teams across various tech domains, I am
+            unafraid to venture out of the
+            comfort zone to design, test and deliver. I am also known to be industrious, with a proven track record in
+            overseeing all system
+            aspects, procedures,
+            documentation, and problem solving.
+        </p> <br>
+
+        <!-- <p>
             Current favourite playlist :
 
-        </p>
-        <iframe width="100%" height="315"
+        </p> -->
+        <!-- <iframe width="50%" height="315" style="margin-left: 25%;"
             src="https://www.youtube.com/embed/videoseries?list=PLSVoghokeyRyriD-xnwjNfPw1z_H9wgR2"
             title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen>
-        </iframe>
-        <p class="scrollFade">
+        </iframe> -->
+        <!-- <p class="scrollFade">
             Current location : Roxbury, Boston, MA.
-        </p>
-        <div class="scrollFade" id="googleMap" style="left: 25%; width:50%; height:300px;"></div><br>
+        </p> -->
+        <!-- <div class="scrollFade" id="googleMap" style="left: 25%; width:50%; height:300px;"></div><br> -->
         <br>
-        <hr class="scrollFade">
+        <hr class="scrollFade" style="margin: 0 auto;">
         <a name="mystory"></a>
+        <div class="fixed-bg-story">
+            <h3 class="scrollFade" style="margin-top: 0px; padding-top: 30px; color: black;">My Story.</h3>
+            <p class="scrollFade" style="color: black;"> Pellentesque adipiscing commodo elit at imperdiet dui accumsan
+                sit.
+                A arcu cursus vitae congue mauris rhoncus aenean. Erat velit scelerisque
+                in dictum non. Duis ut diam quam nulla porttitor massa id neque. Mauris
+                pharetra et ultrices neque ornare aenean. Quisque sagittis purus sit amet
+                volutpat consequat mauris. Nisi lacus sed viverra tellus in hac habitasse
+                platea dictumst. Donec pretium vulputate sapien nec sagittis aliquam
+                malesuada bibendum. At auctor urna nunc id cursus metus aliquam eleifend
+                mi. Imperdiet sed euismod nisi porta lorem mollis aliquam. Nullam eget
+                felis eget nunc lobortis mattis aliquam faucibus. Cursus euismod quis
+                viverra nibh cras pulvinar.</p>
+        </div>
 
-        <h3 class="scrollFade">My Story.</h3>
-        <p class="scrollFade"> Pellentesque adipiscing commodo elit at imperdiet dui accumsan sit.
-            A arcu cursus vitae congue mauris rhoncus aenean. Erat velit scelerisque
-            in dictum non. Duis ut diam quam nulla porttitor massa id neque. Mauris
-            pharetra et ultrices neque ornare aenean. Quisque sagittis purus sit amet
-            volutpat consequat mauris. Nisi lacus sed viverra tellus in hac habitasse
-            platea dictumst. Donec pretium vulputate sapien nec sagittis aliquam
-            malesuada bibendum. At auctor urna nunc id cursus metus aliquam eleifend
-            mi. Imperdiet sed euismod nisi porta lorem mollis aliquam. Nullam eget
-            felis eget nunc lobortis mattis aliquam faucibus. Cursus euismod quis
-            viverra nibh cras pulvinar.</p>
-        <br>
 
-        <hr class="scrollFade">
-        <a name="education"></a>
+        <hr class="scrollFade" style="margin: 0 auto;">
+        <a name="education" style="margin-top: 0;"></a>
         <h3 class="scrollFade">Education.</h3>
         <p>
         <div class="educationcont">
             <dl class="scrollFade dlheading">College</dl>
             <dt class="scrollFade">
                 Northeastern&nbsp;University&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;|&nbsp;Boston,&nbsp;USA&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;September,&nbsp;2022&nbsp;-&nbsp;Present
+
             </dt>
-            <dd class="scrollFade">Master of Science, Software Engineering Systems</dd>
+            <dd class="scrollFade">Master of Science, Software Engineering Systems. GPA : 3.5/4</dd>
             <br>
             <dt class="scrollFade">
                 SRM&nbsp;Institute&nbsp;of&nbsp;Science&nbsp;and&nbsp;Technology&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;|&nbsp;Chennai,&nbsp;India&nbsp;|&nbsp;August,&nbsp;2014&nbsp;-&nbsp;May,&nbsp;2018
@@ -121,55 +202,63 @@
         </div>
         </p>
         <br>
-        <hr class="scrollFade">
+        <hr class="scrollFade" style="margin: 0 auto;">
         <a name="workexp"></a>
-        <h3 class="scrollFade">Work experience.</h3>
-        <p class="scrollFade">
-        <div class="wecont">
-            <dl class="scrollFade dlheading">Infosys&nbsp;Ltd.&nbsp;|
-                Designation&nbsp;:&nbsp;Technology Analyst | August&nbsp;2018&nbsp;-&nbsp;May&nbsp;2022
-            </dl>
-            <dt class="scrollFade">Generic Training
-                &nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;|
-                Mysore, India &nbsp;| August 2018 - January 2019</dt>
-            <br>
-            <dd class="scrollFade">- Trained in Python, OOPs concepts, IBM Mainframes Technologies (Z/Os, COBOL, Job
-                Control Language,
-                CICS)</dd>
-            <br>
-            <dt class="scrollFade">Insurance Domain project (Fortune
-                500)&ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;| Chennai, India | January
-                2019 - May 2022</dt>
-            <br>
-            <dd class="scrollFade">- Environment / Technologies / Tools used in the job :
-                IBM Mainframes platform, COBOL, JCL Scripts, REXX Scripts, CHANGEMAN ZMF (Version Control System
-                software for Mainframes), IBM DB2, ServiceNow.</dd>
-            <dd class="scrollFade">- Automated tasks to reduce labor costs and increase productivity, using Mainframes
-                Technology stack
-                (JCLs, COBOL, REXX Scripts).</dd>
-            <dd class="scrollFade">- Collaborated with onsite clients and other Senior Software Engineers to determine
-                their needs, and
-                devise appropriate solutions, along with procedures and documentations.</dd>
-            <dd class="scrollFade">- Performed root cause analysis to provide resolutions for production issues. Worked
-                as a key resource
-                to support over 60 distinct IT applications.</dd>
-            <dd class="scrollFade">- Drafted corrective action plans following root cause analysis. Created manuals/
-                technical
-                documentations and led training sessions to educate team members on new systems and troubleshooting
-                protocols.</dd>
-            <dd class="scrollFade">- Worked, assisted, and improved the following types of applications, through
-                debugging, and code
-                remediation : Reconciliation systems, Data-Warehouses, Data-engineering systems, Database repositories
-                using IBM DB2 (SQL), FTP Protocol scripts, and other common back-end processing Corporate systems (PDF,
-                e-mail, .csv and other report generation tools).</dd>
-            <dd class="scrollFade">- Responsible for DR activities, Data-flow audits, as well as Production releases to
-                remediate recurring
-                bugs, while using common Software development testing methods such as End - End, Integration, Sanity /
-                Regression, Smoke, resulting in a 40% decrease in recurring incidents, and tasks.</dd>
+        <div class="fixed-bg-we">
+            <h3 class="scrollFade" style="margin-top: 0px; padding-top: 30px;">Work experience.</h3>
+            <p class="scrollFade">
+            <div class="wecont">
+                <dl class="scrollFade dlheading">Infosys&nbsp;Ltd.&nbsp;|
+                    Designation&nbsp;:&nbsp;Technology Analyst | August&nbsp;2018&nbsp;-&nbsp;May&nbsp;2022
+                </dl>
+                <dt class="scrollFade">
+                    Generic&nbsp;Training&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;|&nbsp;Mysore,&nbsp;India&nbsp;&nbsp;|
+                    August,&nbsp;2018&nbsp;-&nbsp;January,&nbsp;2019</dt>
+                <br>
+                <dd class="scrollFade">- Trained in Python, OOPs concepts, IBM Mainframes Technologies (Z/Os, COBOL, Job
+                    Control Language,
+                    CICS)</dd>
+                <br>
+                <dt class="scrollFade">
+                    Insurance&nbsp;Domain&nbsp;project&nbsp;(Fortune&nbsp;500)&ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;|&nbsp;Chennai,&nbsp;India&nbsp;|
+                    January,&nbsp;2019&nbsp;-&nbsp;May,&nbsp;2022</dt>
+                <br>
+                <dd class="scrollFade">- Environment / Technologies / Tools used in the job :
+                    IBM Mainframes platform, COBOL, JCL Scripts, REXX Scripts, CHANGEMAN ZMF (Version Control System
+                    software for Mainframes), IBM DB2, ServiceNow.</dd>
+                <dd class="scrollFade">- Automated tasks to reduce labor costs and increase productivity, using
+                    Mainframes
+                    Technology stack
+                    (JCLs, COBOL, REXX Scripts).</dd>
+                <dd class="scrollFade">- Collaborated with onsite clients and other Senior Software Engineers to
+                    determine
+                    their needs, and
+                    devise appropriate solutions, along with procedures and documentations.</dd>
+                <dd class="scrollFade">- Performed root cause analysis to provide resolutions for production issues.
+                    Worked
+                    as a key resource
+                    to support over 60 distinct IT applications.</dd>
+                <dd class="scrollFade">- Drafted corrective action plans following root cause analysis. Created manuals/
+                    technical
+                    documentations and led training sessions to educate team members on new systems and troubleshooting
+                    protocols.</dd>
+                <dd class="scrollFade">- Worked, assisted, and improved the following types of applications, through
+                    debugging, and code
+                    remediation : Reconciliation systems, Data-Warehouses, Data-engineering systems, Database
+                    repositories
+                    using IBM DB2 (SQL), FTP Protocol scripts, and other common back-end processing Corporate systems
+                    (PDF,
+                    e-mail, .csv and other report generation tools).</dd>
+                <dd class="scrollFade">- Responsible for DR activities, Data-flow audits, as well as Production releases
+                    to
+                    remediate recurring
+                    bugs, while using common Software development testing methods such as End - End, Integration, Sanity
+                    /
+                    Regression, Smoke, resulting in a 40% decrease in recurring incidents, and tasks.</dd>
+            </div>
+            </p>
         </div>
-        </p>
-        <br>
-        <hr class="scrollFade">
+        <hr class="scrollFade" style="margin: 0 auto;">
         <a name="skills"></a>
         <h3 class="scrollFade">My Skills.</h3>
         <p class="scrollFade">
@@ -244,21 +333,32 @@
                 </div>
 
             </dd> -->
+            <dt>Information Technology : </dt>
+            <dd>- Google I.T. Support Certification</dd>
+            <dt>Programming Languages : </dt>
+            <dd>- Python Zero to Hero Certification</dd>
+            <br>
+            <!-- Slideshow container -->
+
             <br>
 
         </div>
         </p>
+
         <br><br>
         <hr class="scrollFade">
         <a name="contactme"></a>
         <h3 class="scrollFade" id="centerh3">Contact me.</h3>
         <p class="scrollFade">
         <div class="contactmecont">
-            <dl class="scrollFade dlheading">You can reach out to me in these socials : </dl>
-            <dt class="scrollFade"><a href="https://www.instagram.com/anirudh.vijayaraghavan/" target="_blank"><img
-                        class="contactlogo" src="PicturesIcons/instagram.png" alt="instagramlogo"></a>
+            <dl class="scrollFade dlheading">Check out my socials : </dl>
+            <dt class="scrollFade">
+                <a href="https://www.instagram.com/anirudh.vijayaraghavan/" target="_blank"><img class="contactlogo"
+                        src="PicturesIcons/instagram.png" alt="instagramlogo"></a>
                 <a href="https://www.linkedin.com/in/anirudh-vijayaraghavan-663224146/" target="_blank"><img
                         class="contactlogo" src="PicturesIcons/linkedin.png" alt="linkedinlogo"></a>
+                <a href="https://github.com/AnirudhVijayaraghavan" target="_blank"><img class="contactlogo"
+                        src="PicturesIcons/github-mark-white.png" alt="githublogo"></a>
             </dt>
             <br>
             <dt class="scrollFade">Alternatively, you can shoot me an e-mail
@@ -275,7 +375,8 @@
         <br><br>
         <footer>
             <span id="footerspan">
-                Handcrafted with <span style="font-size:25px; color: red;">&#9829;</span> in Boston.<br>
+                Handcrafted with <span style="font-size:25px; color: red;">&#9829;</span> in Boston, Powered by
+                <img src="PicturesIcons/github-mark-white.png" alt="githublogo" style="width: 20px;">.<br>
 
                 &copy; Copyright Anirudh's Portfolio Website 2022
             </span>
@@ -283,11 +384,15 @@
         </footer>
 
         <!-- <a href="Lecture2Matrix.html" class="backtohomepagebtn">← Home page.</a> -->
-    </div>
-
+    <!-- Script Link for Bootstrap Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script> -->
+    <!-- Script Link for mainscript.js, which consists of progress bar, back to home page button, google map API, ScrollFade.js
+    functionality, navbar collapse, media query code. -->
     <script src="scripts/mainscript.js" type="text/javascript"></script>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAc9OPcoStxm8lR03sM9v0fELZGiQTYCWA&callback=myMap">
+    <!-- Script Link for google maps API.  -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAc9OPcoStxm8lR03sM9v0fELZGiQTYCWA&callback=myMap">
     </script>
 </body>
 
