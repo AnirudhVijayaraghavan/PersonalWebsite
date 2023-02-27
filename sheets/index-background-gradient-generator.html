@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient background generator</title>
+    <style>
+        body {
+            background-image: linear-gradient(to right, rgb(255, 38, 0), rgb(211, 99, 177));
+        }
+
+        .initialtext {
+            padding-top: 15%;
+            text-align: center;
+            align-items: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="initialtext">
+        <h1>Welcome.</h1>
+        <h2>Generate your background here, and download the code !</h2>
+        <input type="color" id="color1" name="color1" value="#fe2701">
+        <input type="color" id="color2" name="color2" value="#d363b1">
+        <button onclick="randomize()">Randomize !</button>
+        <p>Current CSS background : <span id="codetobedisplayed">linear-gradient(to right, rgb(255, 38, 0), rgb(211, 99,
+                177))</span></p>
+    </div>
+
+    <script>
+
+        function randomize() {
+            
+            let rColor1 = Math.floor(Math.random() * 256);
+            let rColor2 = Math.floor(Math.random() * 256);
+            let rColor3 = Math.floor(Math.random() * 256);
+            let rColor4 = Math.floor(Math.random() * 256);
+            let rColor5 = Math.floor(Math.random() * 256);
+            let rColor6 = Math.floor(Math.random() * 256);
+            let rSidenumber = Math.floor(Math.random() * 2);
+            var rSide;
+            if (rSidenumber===0) {rSide = "left";} else {rSide="right"}
+            document.body.style.backgroundImage = "linear-gradient(to "+rSide+", rgb(" + rColor1 + ", " + rColor2 + ", " + rColor3 + "), rgb(" + rColor4 + ", " + rColor5 + ", " + rColor6 + "))";
+            document.getElementById("codetobedisplayed").innerHTML = document.body.style.backgroundImage;
+        }
+        document.addEventListener("input", function () {
+            let color1 = document.getElementById("color1").value;
+            let color2 = document.getElementById("color2").value;
+            document.body.style.backgroundImage = "linear-gradient(to right, " + color1 + ", " + color2 + ")";
+            document.getElementById("codetobedisplayed").innerHTML = document.body.style.backgroundImage;
+        })
+
+    </script>
+</body>
+
+</html>

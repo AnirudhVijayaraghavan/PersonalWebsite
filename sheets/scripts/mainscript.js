@@ -133,42 +133,230 @@ function myFunction(x) {
 var x = window.matchMedia("(max-width: 800px)")
 myFunction(x)
 x.addListener(myFunction)
-//
-function scrollTrigger(selector, options = {}) {
-  let els = document.querySelectorAll(selector)
-  els = Array.from(els)
-  els.forEach(el => {
-    addObserver(el, options)
-  })
-}
 
-function addObserver(el, options) {
-  if (!('IntersectionObserver' in window)) {
-    if (options.cb) {
-      options.cb(el)
-    } else {
-      entry.target.classList.add('active')
-    }
-    return
-  }
-  let observer = new IntersectionObserver((entries, observer) => { 
-    //this takes a callback function which receives two arguments: the elemts list and the observer instance
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        if (options.cb) {
-          options.cb(el)
-        } else {
-          entry.target.classList.add('active')
-        }
-        observer.unobserve(entry.target)
+// 
+var form = document.getElementById("myForm");
+form.addEventListener("submit", submitted);
+
+//initializing valid variables for switch case.
+var validFirstName = false;
+var validLastName = false;
+var validEmail = false;
+var validPhone = false;
+var validZip = false;
+
+//regex checks variables
+var regExString = /^[a-zA-Z]+$/;
+var regExEmail = /([\w\.]+)@([\w\.]+)\.(\w+)/;
+var regExEmailNEU = /[a-z0-9]+@[a-zA-Z].[a-zA-Z]/;
+var regExPhone = /\d{10}$/;
+var regExZip = /(^\d{5}$)/;
+
+var firstName = document.getElementById("firstName");
+firstName.addEventListener("input", validate);
+
+var lastName = document.getElementById("lastName");
+lastName.addEventListener("input", validate);
+
+var emailId = document.getElementById("emailId");
+emailId.addEventListener("input", validate);
+
+var phoneNumber = document.getElementById("phoneNumber");
+phoneNumber.addEventListener("input", validate);
+
+var zipcode = document.getElementById("zipcode");
+zipcode.addEventListener("input", validate);
+
+function validate(e) {
+  console.log("validate");
+  var value = e.target.value;
+  console.log(value);
+  var type = this.id;
+  var em = "error_" + type;
+
+  switch (type) {
+    case "firstName":
+      if (!value.trim().match(regExString)) {
+        document.getElementById(em).style.display = "block";
+        this.style.border = "2px solid red";
+        validFirstName = false;
       }
-    })
-  }, options)
-  observer.observe(el)
-}
-// Example usages:
-scrollTrigger('.intro-text')
+      else {
+        document.getElementById(em).style.display = "none";
+        this.style.border = "";
+        validFirstName = true;
+      }
+      break;
 
-scrollTrigger('.scroll-reveal', {
-  rootMargin: '-200px',
-})
+    case "lastName":
+      if (!value.trim().match(regExString)) {
+        document.getElementById(em).style.display = "block";
+        this.style.border = "2px solid red";
+        validLastName = false;
+      }
+      else {
+        document.getElementById(em).style.display = "none";
+        this.style.border = "";
+        validLastName = true;
+      }
+      break;
+
+    case "emailId":
+      if (!value.trim().match(regExEmailNEU)) {
+        document.getElementById(em).style.display = "block";
+        this.style.border = "2px solid red";
+        validEmail = false;
+      }
+      else {
+        document.getElementById(em).style.display = "none";
+        this.style.border = "";
+        validEmail = true;
+      }
+      break;
+
+    case "phoneNumber":
+      if (!value.trim().match(regExPhone)) {
+        document.getElementById(em).style.display = "block";
+        this.style.border = "2px solid red";
+        validPhone = false;
+      }
+      else {
+        document.getElementById(em).style.display = "none";
+        this.style.border = "";
+        validPhone = true;
+      }
+      break;
+
+
+    case "zipcode":
+      if (!value.trim().match(regExZip)) {
+        document.getElementById(em).style.display = "block";
+        this.style.border = "2px solid red";
+        validZip = false;
+      }
+      else {
+        document.getElementById(em).style.display = "none";
+        this.style.border = "";
+        validZip = true;
+      }
+      break;
+  }
+}
+
+//The following will be called in submit() function to return the value of source CBs
+//selected.
+function sourceCBValueSelected() {
+  var sourceCB = document.getElementsByName('source');
+  let arrayCB = [];
+  for (i = 0; i < sourceCB.length; i++) {
+    if (sourceCB[i].checked)
+      arrayCB.push(sourceCB[i].value);
+  }
+  return arrayCB;
+}
+//The following is to make sure only 1 CB needs be checked.
+function deRequireCb(cbcheck) {
+  cb = document.getElementsByClassName(cbcheck);
+
+  var atLeastOneChecked = false; //at least one cb is checked
+  for (i = 0; i < cb.length; i++) {
+    if (cb[i].checked === true) {
+      atLeastOneChecked = true;
+    }
+  }
+
+  if (atLeastOneChecked === true) {
+    for (i = 0; i < cb.length; i++) {
+      cb[i].required = false;
+    }
+  } else {
+    for (i = 0; i < cb.length; i++) {
+      cb[i].required = true;
+    }
+  }
+}
+
+//The following is to reset the form, variables and localStorage.
+function resetButton() {
+  console.log("resetButton() function called.")
+  document.getElementById("myForm").reset();
+  console.log("Form reset.");
+  localStorage.clear();
+  console.log("Data removed from localStorage.");
+}
+
+function addToLocalStorage() {
+  //The following is to declare localStorage keys, using values inside the labels.
+
+  var firstName = document.getElementById("firstName").value;
+  localStorage.setItem("firstName", firstName);
+  var lastName = document.getElementById("lastName").value;
+  localStorage.setItem("lastName", lastName);
+  var emailId = document.getElementById("emailId").value;
+  localStorage.setItem("emailId", emailId);
+  var phoneNumber = document.getElementById("phoneNumber").value;
+  localStorage.setItem("phoneNumber", phoneNumber);
+  var zipcode = document.getElementById("zipcode").value;
+  localStorage.setItem("zipcode", zipcode);
+  var source = sourceCBValueSelected();
+  localStorage.setItem("source", source);
+  var comments = document.getElementById("comments").value;
+  localStorage.setItem("comments", comments);
+  console.log("Data Saved to localStorage Successfully");
+}
+
+// EmailJS code.
+function sendemailtome() {
+  alert(localStorage.getItem("emailId"));
+  emailjs.send("service_wtn042h", "template_bv4dacd", {
+    firstName: localStorage.getItem("firstName"),
+    lastName: localStorage.getItem("lastName"),
+    emailId: localStorage.getItem("emailId"),
+    phoneNumber: localStorage.getItem("phoneNumber"),
+    zipcode: localStorage.getItem("zipcode"),
+    source: localStorage.getItem("source"),
+    comments: localStorage.getItem("comments"),
+  });
+}
+
+function submitted(e) {
+  e.preventDefault();
+  console.log("submitted");
+  console.log(validFirstName + "|" + validLastName + "|" + validEmail + "|" + validPhone + "|" + validZip);
+  if (validFirstName && validLastName && validEmail && validPhone && validZip) {
+    // The following adds the form details to localStorage.
+    addToLocalStorage()
+    // The following function sends the e-mail.
+    sendemailtome();
+    // The following function resets the form.
+    resetButton();
+
+  }
+  else {
+    alert("Please enter all the details, as prompted.");
+  }
+}
+
+// The following code is for gsap Plugin.
+gsap.registerPlugin(ScrollTrigger);
+gsap.from("#h1", {
+  x: "-100%",
+  duration: 3,
+  scrollTrigger: "#h1"
+});
+gsap.from("#h2", {
+  x: "100%",
+  duration: 3,
+  scrollTrigger: "#h2"
+});
+
+
+gsap.from(".formsection", {
+  x: "100%",
+  duration: 4,
+  ease: "bounce.out",
+  y: - 500,
+  scrollTrigger: ".formsection"
+});
+
+

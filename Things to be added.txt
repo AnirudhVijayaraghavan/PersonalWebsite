@@ -1,7 +1,6 @@
 Certificates section - 
-1. complete one more (preferrably DSA or UIUX from coursera / udemy.)
-2. redesign the certificate section.
-3. Certificates currently doing and need to be done : 
+1. redesign the certificate section. - put on hold
+3. Certificates currently completed, doing, and need to be done : 
  - 2022 Python bootcamp - udemy - completed.
  - Google IT support - coursera - completed.
  - Google UIUX - coursera
@@ -9,13 +8,31 @@ Certificates section -
  - Data structures and algorithms - yet to start
 
 Projects section - 
-1. Add PERN stack proteinandme project.
-2. Add REact / bootstrap personal blog website.
+1. Add PERN stack project.
+2. Add REact / bootstrap personal blog website - vvimportant.
+4. Add mobile app project (calorie tracking, / fitness set s& reps counter, / expense tracker) using java and android.
 3. Add note taking site / background generating site.
-4. Add mobile app project (calorie tracking, / fitness set s& reps counter, / expense tracker).
 
 My story section - 
 1. Update the content of my story section.
 
-About me section - 
-1. Redesign the about me section to have current details, in a more creative manner.
+
+WE : 
+- Operated Environment / Technologies / Tools : IBM Mainframes platform, COBOL, JCL Scripts, REXX Scripts, CHANGEMAN ZMF (Version Control System software for Mainframes), IBM DB2, ServiceNow.
+- Automated tasks to reduce labor costs and increase productivity, leveraging Mainframes Technology stack (JCLs, COBOL, REXX Scripts).
+- Collaborated with onsite clients and other Senior Software Engineers to determine needs, and devise solutions, along with detailed procedures and documentations, to exceed 100% project deliverables.
+- Performed root cause analysis to provide resolutions for production issues. Drafted corrective action plans following root cause analysis. Worked as a key resource to support over 60 distinct IT applications.
+- Created technical documentations and led training sessions to educate team members on new systems and troubleshooting protocols. Corrective action plans and docs. led to 9% employee uptime increase.
+- Developed, assisted, and improved the following types of applications, through debugging, and code remediation : Reconciliation systems, Data-Warehouses, Data-engineering systems, Database repositories employing IBM DB2 (SQL), FTP Protocol scripts, and other common back-end processing Corporate systems (PDF, e-mail, .csv and other report generation tools).
+- Led DR activities, managed data-flow audits, as well as Production releases to remediate recurring bugs, resulting in a 35% decrease in recurring incidents, and tasks.
+- Analyzed errors in legacy code during refactoring / maintenance phase, adopting testing methods such as End - End, Integration, Sanity / Regression, Smoke. Led to 5% application uptime.
+
+Fluent in english - IELTS score 8.5/9;
+Volunteering experience in undergrad, hosting symposiums, assisting guests with seatings, and general front of the house hosting duties;
+Experienced with data entry / clerical work through my previous job;
+
+smtp username : anirudh1997@hotmail.com 
+smtp password : 8C8469586572F5A00986B8CBBC4311ADE45A
+security token : 6e0a39c2-9cd9-4330-92e8-8f2321d73a7e
+5bc301e7-0460-4ec5-92dc-607951ba5103
+10b07db5-ee0f-40ca-848f-a2fe63d7995c

@@ -15,18 +15,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Quicksand:wght@300&display=swap"
         rel="stylesheet">
 
-    <!-- script to install ScrollMagic jquery plugin. -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-
     <!-- Script to install GreenSock's plugin and cdns. -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/Flip.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-
-
-
     <style>
 
     </style>
@@ -41,15 +33,16 @@
             <a href="#education">Education.</a>
             <a href="#workexp">My Work Experience.</a>
             <a href="#skills">My Skills.</a>
-            <a href="#projects">My Projects / Certifications.</a>
+            <a href="#projects">My Projects.</a>
             <a href="#contactme">Contact me.</a>
         </div>
 
         <div class="progress-bar" />
         <button class="resume hidden">
             <abbr title="Click here to download my resume.">
-                <a href="scripts/Anirudh's Resume_22-11-03.PDF" download="Anirudh_Vijayaraghavan_Resume_11-03-2022"><svg fill="#000000" width="800px"
-                        height="800px" class="resume-icon" viewBox="0 0 16 16" id="download-16px"
+                <a href="scripts/Anirudh_Vijayaraghavan_Resume_NUID-002995983.pdf"
+                    download="Anirudh_Vijayaraghavan_Resume_11-03-2022" target="_blank"><svg fill="#000000"
+                        width="800px" height="800px" class="resume-icon" viewBox="0 0 16 16" id="download-16px"
                         xmlns="http://www.w3.org/2000/svg">
                         <path id="Path_135" data-name="Path 135"
                             d="M38-38.5v5A2.5,2.5,0,0,1,35.5-31h-11A2.5,2.5,0,0,1,22-33.5v-5A2.5,2.5,0,0,1,24.5-41h2a.5.5,0,0,1,.5.5.5.5,0,0,1-.5.5h-2A1.5,1.5,0,0,0,23-38.5v5A1.5,1.5,0,0,0,24.5-32h11A1.5,1.5,0,0,0,37-33.5v-5A1.5,1.5,0,0,0,35.5-40h-2a.5.5,0,0,1-.5-.5.5.5,0,0,1,.5-.5h2A2.5,2.5,0,0,1,38-38.5Zm-11.354.646a.5.5,0,0,0,0,.708l3,3a.518.518,0,0,0,.163.109A.5.5,0,0,0,30-34a.5.5,0,0,0,.191-.038.518.518,0,0,0,.163-.109l3-3a.5.5,0,0,0,0-.708.5.5,0,0,0-.708,0L30.5-35.707V-46.5A.5.5,0,0,0,30-47a.5.5,0,0,0-.5.5v10.793l-2.146-2.147A.5.5,0,0,0,26.646-37.854Z"
@@ -73,20 +66,22 @@
 
         <div class="fixed-bg-initial">
 
-            <h1 class="scrollFade">Hi !</h1>
-            <img class="mainprofilephoto" src="PicturesIcons/20191027_081104.jpg" alt="Main profile photo"
+            <h1 class="scrollFade" id="h1">Hi !</h1>
+            <img class="mainprofilephotoleft" src="PicturesIcons/IMG_3275.jpg" alt="Main profile photo"
                 style="border-style: solid; border-style: none solid solid none;">
             <img class="mainprofilephotoright" src="PicturesIcons/IMG-20220818-WA0020.jpg" alt="Main profile photo"
                 style="border-style: solid; border-style: none none solid solid;">
-            <h2 class="scrollFade">Welcome to my page.</h2>
-            <a name="aboutme"></a>
+            <img class="mainprofilephotobottomleft" src="PicturesIcons/IMG_20230116_130426_Bokeh.jpg"
+                alt="Main profile photo" style="border-style: solid; border-style: none solid solid none;">
+            <img class="mainprofilephotobottomright" src="PicturesIcons/OldBPL.jpeg" alt="Main profile photo"
+                style="border-style: solid; border-style: none none solid solid;">
+            <h2 class="scrollFade" id="h2">Welcome to my page.</h2>
+
             <br>
         </div>
-
+        <a name="aboutme"></a>
         <hr class="scrollFade" style="margin: 0 auto;">
         <br>
-
-
         <h3 class="scrollFade" id="centerh3">About me.</h3>
 
         <!-- <p class="scrollFade">I like long walks on the beach, playing the piano, and
@@ -129,7 +124,14 @@
         </div>
         <p class="scrollFade" style="text-align: center;">IBM Mainframe's platform | Full-stack web developer | React.js
             | Java </p>
-
+        <div class="scrollFade box-reverse">
+            <div class="container-reverse">
+                <span class="circle-reverse"></span>
+                <span class="circle-reverse"></span>
+                <span class="circle-reverse"></span>
+                <span class="circle-reverse"></span>
+            </div>
+        </div>
         <br>
         <p class="scrollFade">
             I am a focused Systems Engineer with over 3 years of experience in supporting, developing, improving and
@@ -162,17 +164,7 @@
         <a name="mystory"></a>
         <div class="fixed-bg-story">
             <h3 class="scrollFade" style="margin-top: 0px; padding-top: 30px; color: black;">My Story.</h3>
-            <p class="scrollFade" style="color: black;"> Pellentesque adipiscing commodo elit at imperdiet dui accumsan
-                sit.
-                A arcu cursus vitae congue mauris rhoncus aenean. Erat velit scelerisque
-                in dictum non. Duis ut diam quam nulla porttitor massa id neque. Mauris
-                pharetra et ultrices neque ornare aenean. Quisque sagittis purus sit amet
-                volutpat consequat mauris. Nisi lacus sed viverra tellus in hac habitasse
-                platea dictumst. Donec pretium vulputate sapien nec sagittis aliquam
-                malesuada bibendum. At auctor urna nunc id cursus metus aliquam eleifend
-                mi. Imperdiet sed euismod nisi porta lorem mollis aliquam. Nullam eget
-                felis eget nunc lobortis mattis aliquam faucibus. Cursus euismod quis
-                viverra nibh cras pulvinar.</p>
+            <p class="scrollFade" style="color: black;"> Coming soon.</p>
         </div>
 
 
@@ -183,27 +175,39 @@
         <div class="educationcont">
             <dl class="scrollFade dlheading">College</dl>
             <dt class="scrollFade">
-                Northeastern&nbsp;University&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;|&nbsp;Boston,&nbsp;USA&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;September,&nbsp;2022&nbsp;-&nbsp;Present
+                Northeastern&nbsp;University&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&ensp;&ensp;&nbsp;|&nbsp;Boston,&nbsp;USA&nbsp;&nbsp;&nbsp;&nbsp;|
+                September,&nbsp;2022&nbsp;-&nbsp;Present
 
             </dt>
             <dd class="scrollFade">Master of Science, Software Engineering Systems. GPA : 3.5/4</dd>
+            <dd class="scrollFade"> Coursework : <br>
+                Concepts of Object Oriented Design. <br>
+                Web design and User Experience Engineering. <br>
+                Program Structures and Algorithms. <br>
+                User Experience Design and Testing (UI/UX).
+            </dd>
             <br>
             <dt class="scrollFade">
-                SRM&nbsp;Institute&nbsp;of&nbsp;Science&nbsp;and&nbsp;Technology&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;|&nbsp;Chennai,&nbsp;India&nbsp;|&nbsp;August,&nbsp;2014&nbsp;-&nbsp;May,&nbsp;2018
+                SRM&nbsp;Institute&nbsp;of&nbsp;Science&nbsp;and
+                Technology&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;|&nbsp;Chennai,&nbsp;India&nbsp;|
+                August,&nbsp;2014&nbsp;-&nbsp;May,&nbsp;2018
             </dt>
             <dd class="scrollFade">Bachelor of Technology, Electrical and Electronics Engineering. GPA : 3.2/4</dd>
 
-            <dl class="scrollFade dlheading">Schooling</dl>
+
+
+            <dl class="scrollFade dlheading">School</dl>
             <dt class="scrollFade">P.S.B.B&nbsp;-&nbsp;Padma&nbsp;Seshadri&nbsp;Bala&nbsp;Bhavan,
                 Senior&nbsp;Secondary&nbsp;School
-                |&nbsp;Chennai,&nbsp;India&nbsp;|&nbsp;September,&nbsp;2012&nbsp;-&nbsp;May,&nbsp;2014</dt>
+                |&nbsp;Chennai,&nbsp;India&nbsp;| September,&nbsp;2012&nbsp;-&nbsp;May,&nbsp;2014</dt>
             <dd class="scrollFade">Grades 11 - 12 CBSE Board, Scored 75%. Electives : Maths, Physics, Chemistry,
                 Informatics Practices.
             </dd>
             <br>
             <dt class="scrollFade">G.I.I.S - Global&nbsp;Indian&nbsp;International&nbsp;School
-                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;
-                |&nbsp;Singapore&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;September,&nbsp;2001&nbsp;-&nbsp;August,&nbsp;2012
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;
+                |&nbsp;Singapore&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+                September,&nbsp;2001&nbsp;-&nbsp;August,&nbsp;2012
             </dt>
             <dd class="scrollFade">Grades 1 - 10, CBSE Board, CGPA : 9/10.</dd>
 
@@ -220,7 +224,7 @@
                     Designation&nbsp;:&nbsp;Technology Analyst | August&nbsp;2018&nbsp;-&nbsp;May&nbsp;2022
                 </dl>
                 <dt class="scrollFade">
-                    Generic&nbsp;Training&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;|&nbsp;Mysore,&nbsp;India&nbsp;&nbsp;|
+                    Generic&nbsp;Training&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;|&nbsp;Mysore,&nbsp;India&nbsp;&nbsp;&nbsp;|
                     August,&nbsp;2018&nbsp;-&nbsp;January,&nbsp;2019</dt>
                 <br>
                 <dd class="scrollFade">- Trained in Python, OOPs concepts, IBM Mainframes Technologies (Z/Os, COBOL, Job
@@ -228,7 +232,8 @@
                     CICS)</dd>
                 <br>
                 <dt class="scrollFade">
-                    Insurance&nbsp;Domain&nbsp;project&nbsp;(Fortune&nbsp;500)&ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;|&nbsp;Chennai,&nbsp;India&nbsp;|
+                    Insurance&nbsp;Domain&nbsp;project&nbsp;(Fortune
+                    500)&ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&nbsp;|&nbsp;Chennai,&nbsp;India&nbsp;|
                     January,&nbsp;2019&nbsp;-&nbsp;May,&nbsp;2022</dt>
                 <br>
                 <dd class="scrollFade">- Environment / Technologies / Tools used in the job :
@@ -268,60 +273,80 @@
         </div>
         <hr class="scrollFade" style="margin: 0 auto;">
         <a name="skills"></a>
-        <h3 class="scrollFade">My Skills.</h3>
+        <h3 class="scrollFade" id="centerh3">My Skills.</h3>
         <p class="scrollFade">
-        <div class="skillscont">
+        <div class="skillscont" style="text-align: center;">
             <dl class="scrollFade dlheading">IBM Mainframes platform.</dl>
             <dt class="scrollFade">
-                <img class="skilliconpics" src="PicturesIcons/zos.png" alt="z/os">&nbsp;Z/OS&emsp;
-                <img class="skilliconpics" src="PicturesIcons/cobol.png" alt="cobol">&nbsp;COBOL &emsp;
+                <img class="skilliconpics" src="PicturesIcons/zos.png" alt="z/os">&nbsp;Z/OS
+                <img class="skilliconpics" src="PicturesIcons/cobol.png" alt="cobol">&nbsp;COBOL
                 <img class="skilliconpics" src="PicturesIcons/JCL.png" alt="jcl">&nbsp;JCL&nbsp;&&nbsp;REXX&nbsp;Scripts
-                &ensp;&ensp;
                 <img class="skilliconpics" src="PicturesIcons/ibmdb2.png" alt="ibmdb2">&nbsp;IBM&nbsp;DB2
             </dt>
             <br>
 
             <dl class="scrollFade dlheading">Programming Languages.</dl>
             <dt class="scrollFade">
-                <img class="skilliconpics" src="PicturesIcons/java.png" alt="java">&nbsp;Java&emsp;&nbsp;
-                <img class="skilliconpics" src="PicturesIcons/html5.png" alt="html5">&nbsp;HTML5&emsp;&nbsp;
-                <img class="skilliconpics" src="PicturesIcons/css.png" alt="css">&nbsp;CSS &emsp;&nbsp;
-                <img class="skilliconpics" src="PicturesIcons/jscript.png" alt="javascript">&nbsp;Javascript&ensp;
+                <img class="skilliconpics" src="PicturesIcons/java.png" alt="java">&nbsp;Java
+                <img class="skilliconpics" src="PicturesIcons/jscript.png" alt="javascript">&nbsp;Javascript
                 <img class="skilliconpics" src="PicturesIcons/python.png" alt="python">&nbsp;Python
+            </dt>
+            <br>
+
+            <dl class="scrollFade dlheading">Web Technologies.</dl>
+            <dt class="scrollFade">
+                <img class="skilliconpics" src="PicturesIcons/html5.png" alt="html5">&nbsp;HTML5
+                <img class="skilliconpics" src="PicturesIcons/css.png" alt="css">&nbsp;CSS
+                <img class="skilliconpics" src="PicturesIcons/jscript.png" alt="javascript">&nbsp;Javascript
+                <img class="skilliconpics" src="PicturesIcons/react.png" alt="reactjs">&nbsp;React.js
+                <img class="skilliconpics" src="PicturesIcons/nodejs.jpg" alt="nodejs">&nbsp;Node.js
+                <img class="skilliconpics" src="PicturesIcons/expressjs.png" alt="expressjs">&nbsp;Express.js
+                <img class="skilliconpics" src="PicturesIcons/mongodb.png" alt="mongodb">&nbsp;MongoDB
+                <img class="skilliconpics" src="PicturesIcons/postgres.png" alt="postgres">&nbsp;PostgreSQL
             </dt>
             <br>
 
             <dl class="scrollFade dlheading">Softwares.</dl>
             <dt class="scrollFade">
                 <img class="skilliconpics" src="PicturesIcons/snow.png" alt="snow">&nbsp;<abbr
-                    title="ServiceNow">Snow</abbr>&ensp;
-                <img class="skilliconpics" src="PicturesIcons/vscode.png" alt="vscode">&nbsp;VSCode &ensp;&nbsp;
-                <img class="skilliconpics" src="PicturesIcons/intellij.png" alt="intellij">&nbsp;IntelliJ &nbsp;
-                <img class="skilliconpics" src="PicturesIcons/atom.png" alt="atom">&nbsp;Atom&emsp;&ensp;&nbsp;&ensp;
+                    title="ServiceNOW">Snow</abbr>
+                <img class="skilliconpics" src="PicturesIcons/vscode.png" alt="vscode">&nbsp;VSCode
+                <img class="skilliconpics" src="PicturesIcons/intellij.png" alt="intellij">&nbsp;IntelliJ
+                <img class="skilliconpics" src="PicturesIcons/atom.png" alt="atom">&nbsp;Atom
                 <img class="skilliconpics" src="PicturesIcons/git.png" alt="git">&nbsp;Git
+                <img class="skilliconpics" src="PicturesIcons/figma.png" alt="figma">&nbsp;Figma
+                <img class="skilliconpics" src="PicturesIcons/blender.png" alt="blender">&nbsp;Blender
+
             </dt>
             <br>
+
+            
         </div>
         </p>
         <hr class="scrollFade">
         <a name="projects"></a>
-        <h3 class="scrollFade">My Projects / Certifications.</h3>
+        <h3 class="scrollFade">My Projects.</h3>
         <p class="scrollFade">
         <div class="projectscertscont">
-            <dl class="scrollFade dlheading">My Projects.</dl>
+            <dl class="scrollFade dlheading">E-commerce website - MERN stack project</dl>
             <dt class="scrollFade">
-                <a href="Lecture1PartBHomePage.html">
-                    <img class="walnutBBB" src="PicturesIcons/walnutBBB.png" alt="walnutBBB">
-                    Walnut Avenue's <abbr title="Beer, Bed, and Breakfast">BBB</abbr>
+                <a href="">
+                    PopShop
                 </a>
-            </dt>
-            <dd class="scrollFade">- A simple Beer, Bed, and Breakfast website, with a
-                minimalistic, modern layout.
-            </dd>
-            <dd class="scrollFade">- This project is a work in progress, and new features are always being added.</dd>
 
-            <br><br><br>
-            <dl class="scrollFade dlheading">My Certifications.</dl>
+            </dt>
+            <dd class="scrollFade">- Collaborated with 2 other members to design, devise, and demonstrate an e-commerce clothing and home decor web- application
+                using MERN (MongoDB, Express.js, Node.js, React.js) stack.
+            </dd>
+            <dd class="scrollFade">- Assembled the website leveraging React-Bootstrap making it responsive, and integrated the back-end RESTful APIs with Stripe
+                payment gateway. Implemented search functionality, Login/Signup functions, a rich UI, bcrypt password masking, JWT.</dd>
+
+            <br>
+            <!-- <dl class="scrollFade dlheading">My Certifications.</dl> -->
+            <!-- <dt>Information Technology : </dt>
+            <dd>- Google I.T. Support Certification</dd>
+            <dt>Programming Languages : </dt>
+            <dd>- Python Zero to Hero Certification</dd> -->
             <!-- <dd>
                 <div class="scrollFade gallery"><img class="mainimg" src="PicturesIcons/python_linkedin.png" alt=""><img
                         class="galleryhover" src="PicturesIcons/python_linkedin.png" alt="">
@@ -341,17 +366,12 @@
                 </div>
 
             </dd> -->
-            <dt>Information Technology : </dt>
-            <dd>- Google I.T. Support Certification</dd>
-            <dt>Programming Languages : </dt>
-            <dd>- Python Zero to Hero Certification</dd>
+
             <!-- <div class="scroll-reveal box1 left">
                 I came from left
             </div> -->
-            <br>
             <!-- Slideshow container -->
 
-            <br>
 
         </div>
         </p>
@@ -366,21 +386,126 @@
             <dt class="scrollFade">
                 <a href="https://www.instagram.com/anirudh.vijayaraghavan/" target="_blank"><img class="contactlogo"
                         src="PicturesIcons/instagram.png" alt="instagramlogo"></a>
-                <a href="https://www.linkedin.com/in/anirudh-vijayaraghavan-663224146/" target="_blank"><img
-                        class="contactlogo" src="PicturesIcons/linkedin.png" alt="linkedinlogo"></a>
+                <a href="https://www.linkedin.com/in/anirudh-vijayaraghavan/" target="_blank"><img class="contactlogo"
+                        src="PicturesIcons/linkedin.png" alt="linkedinlogo"></a>
                 <a href="https://github.com/AnirudhVijayaraghavan" target="_blank"><img class="contactlogo"
                         src="PicturesIcons/github-mark-white.png" alt="githublogo"></a>
             </dt>
-            <br>
-            <dt class="scrollFade">Alternatively, you can shoot me an e-mail
+            <!-- <dt class="scrollFade">Alternatively, you can shoot me an e-mail
                 <a class="mailbtn" href="mailto:anirudh1997@hotmail.com">
                     <abbr title="This will redirect you to your computer's mailing app.">here</abbr>
                 </a>, or call me <a class="mailbtn" href="tel:+18579919949">
                     <abbr title="This will redirect you to your computer's or phone's telephone app.">here</abbr>.
                 </a>
-            </dt>
+            </dt> -->
+            <div id="scrollmag" class="scrollmag">
+                <img src="https://robohash.org/AnirudhVijayaragh" alt="robohash image">
+            </div>
+            <p id="centerh3" style="margin-left: -25px;">Looking to collaborate ? Let's connect.
+            </p>
             <br>
+            <div class="formsection">
+                <form method="post" id="myForm">
+                    <p>
+                        <label for="firstName">First Name*:</label>
+                        <input class="input1" type="text" name="firstName" id="firstName" placeholder="  First Name"
+                            required="required" />
+                        <br><br>
 
+                    <div id="error_firstName" style="display: none; color: red;">
+                        Invalid input for the First Name field. Use text only please.
+                        <br><br>
+                    </div>
+                    </p>
+
+                    <p>
+                        <label for="lastName">Last Name*:</label>
+                        <input class="input1" type="text" name="lastName" id="lastName" placeholder="  Last Name"
+                            required="required" />
+                        <br><br>
+
+                    <div id="error_lastName" style="display: none; color: red;">
+                        Invalid input for the First Name field. Use text only please.
+                        <br><br>
+                    </div>
+                    </p>
+
+
+                    <p>
+                        <label for="emailId">Email ID*:</label>
+                        <input class="input1" type="text" name="emailId" id="emailId" placeholder="  address@domain.com"
+                            required="required" />
+                        <br><br>
+
+                    <div id="error_emailId" style="display: none; color: red;">
+                        Invalid input for the Email Id field. Please enter a valid email id.
+                        <br><br>
+                    </div>
+                    </p>
+
+
+                    <p>
+                        <label for="phoneNumber">Phone Number*:</label>
+                        <input class="input1" type="text" name="phoneNumber" id="phoneNumber" placeholder="  xxxxxxxxxx"
+                            required="required" />
+                        <br><br>
+
+                    <div id="error_phoneNumber" style="display: none; color: red;">
+                        Invalid input for the Phone Number field. Please enter a valid phone number.
+                        <br><br>
+                    </div>
+                    </p>
+
+
+                    <p>
+                        <label for="zipcode">ZipCode*:</label>
+                        <input class="input1" type="text" name="zipcode" id="zipcode" placeholder="  xxxxx"
+                            required="required" />
+                        <br><br>
+
+                    <div id="error_zipcode" style="display: none; color: red;">
+                        Invalid input for the zipcode field. Only 5 digits are allowed.
+                        <br><br>
+                    </div>
+                    </p>
+
+
+                    <p>
+                        <label for="source">Source ? :</label> <br>
+                        <span id="checkboxpara">
+                            <input type='checkbox' class='cbcheck' name="source" value="LinkedIN" required
+                                onclick="deRequireCb('cbcheck')" /> LinkedIN
+                            <input type='checkbox' class='cbcheck' name="source" value="Google" required
+                                onclick="deRequireCb('cbcheck')" /> Google
+                            <input type='checkbox' class='cbcheck' name="source" value="Other" required
+                                onclick="deRequireCb('cbcheck')" /> Other
+                        </span>
+
+
+                    </p>
+
+                    <br>
+                    <p>
+                        <label for="comments">Comments*:</label>
+                        <textarea class="input1" required="required" name="text" id="comments"
+                            placeholder="  Your comments" rows="4" cols="20"></textarea>
+                    </p>
+
+                    <br>
+                    <p style="text-align: center;">
+
+                        <button class='glowing-btn' onclick="submitted()"><span class='glowing-txt'>
+                                S<span class='faulty-letter'>U</span>BM<span class='faulty-letter'>I</span>T</span>
+                        </button> <br> <br>
+                        <button class='glowing-btn' onclick="resetButton()"><span class='glowing-txt'>
+                                R<span class='faulty-letter'>E</span>-S<span class='faulty-letter'>E</span>T</span>
+                        </button>
+                        <br> <br>
+                    </p>
+
+                    <br>
+                </form>
+            </div> <br>
         </div>
         </p>
         <br><br>
@@ -402,9 +527,23 @@
         <!-- Script Link for mainscript.js, which consists of progress bar, back to home page button, google map API, ScrollFade.js
     functionality, navbar collapse, media query code. -->
         <script src="scripts/mainscript.js" type="text/javascript"></script>
+        <!-- <script src="scripts/scrollmagicfile.js" type="text/javascript"></script> -->
         <!-- Script Link for google maps API.  -->
         <script
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAc9OPcoStxm8lR03sM9v0fELZGiQTYCWA&callback=myMap">
+            </script>
+        <!-- script to install ScrollMagic jquery plugin. -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
+        <!-- script to connect to EmailJS. -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+            (function () {
+                emailjs.init("Hb8eNKmZEiGPmRaOe");
+            })();
         </script>
 
 </body>
