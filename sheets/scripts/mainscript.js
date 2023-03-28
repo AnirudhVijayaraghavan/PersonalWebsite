@@ -98,8 +98,10 @@ function openNav() {
   document.getElementsByClassName("openbtn")[0].style.display = "none";
   document.getElementsByClassName("openbtn")[0].style.opacity = "100%";
   document.getElementsByTagName("footer")[0].style.width = "80%";
-  document.getElementsByClassName("mainprofilephoto")[0].style.marginLeft = "2%";
-
+  document.getElementsByClassName("mainprofilephotoleft")[0].style.marginLeft = "2%";
+  document.getElementsByClassName("mainprofilephotoright")[0].style.marginRight = "2%";
+  document.getElementsByClassName("mainprofilephotobottomleft")[0].style.marginLeft = "2%";
+  document.getElementsByClassName("mainprofilephotobottomright")[0].style.marginRight = "2%";
 }
 
 function closeNav() {
@@ -108,15 +110,21 @@ function closeNav() {
   document.getElementById("main").style.marginLeft = "0";
   document.getElementsByClassName("openbtn")[0].style.display = "inline";
   document.getElementsByTagName("footer")[0].style.width = "100%";
-  document.getElementsByClassName("mainprofilephoto")[0].style.marginLeft = "15%";
+  document.getElementsByClassName("mainprofilephotoleft")[0].style.marginLeft = "15%";
+  document.getElementsByClassName("mainprofilephotoright")[0].style.marginRight = "10%";
+  document.getElementsByClassName("mainprofilephotobottomleft")[0].style.marginLeft = "5%";
+  document.getElementsByClassName("mainprofilephotobottomright")[0].style.marginRight = "5%";
 }
 
 function openorclose() {
   if (state === "open") {
     closeNav();
+    
   }
   else if (state === "closed") {
+    
     openNav();
+    gsap.from("#mySidebar a", {opacity: 0, stagger: 0.2});
   }
 }
 
@@ -339,6 +347,7 @@ function submitted(e) {
 
 // The following code is for gsap Plugin.
 gsap.registerPlugin(ScrollTrigger);
+let animation= gsap.timeline();
 gsap.from("#h1", {
   x: "-100%",
   duration: 3,

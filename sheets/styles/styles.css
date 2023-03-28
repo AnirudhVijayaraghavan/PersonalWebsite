@@ -154,7 +154,7 @@ hr {
   }
 }
 
-/* The following is to center the main image. */
+/* The following is to center the main images. */
 .mainprofilephotoleft {
   display: block;
   margin-left: 15%;
@@ -408,8 +408,9 @@ table {
 }
 
 .skilliconpics {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
+  border-radius: 40%;
 }
 
 .skilliconpics:hover {
@@ -786,7 +787,7 @@ footer {
   text-align: center;
   width: 100%;
   opacity: 100%;
-  transition: opacity 0.5s;
+  transition: opacity 1s;
 }
 
 .footerspan {
