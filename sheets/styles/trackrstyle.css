@@ -1,0 +1,43 @@
+body {
+  background-color: black;
+  margin: 0;
+  font-family: "Segoe UI", Arial, Helvetica, Sans Serif;
+  font-size: larger;
+  color: white;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  overflow-x: hidden;
+  /* display: grid;
+    grid-template-columns: auto 0px;  */
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+hr {
+  color: red;
+}
+
+.carouselimageshero {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+}
+.heroimage{
+  position: relative;
+}
+#textpositionheroimage {
+  position: absolute;
+  top: 300px;
+  left: 300px;
+  font-size: 30px;
+}
