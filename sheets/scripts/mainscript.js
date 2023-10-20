@@ -119,12 +119,12 @@ function closeNav() {
 function openorclose() {
   if (state === "open") {
     closeNav();
-
+    
   }
   else if (state === "closed") {
-
+    
     openNav();
-    gsap.from("#mySidebar a", { opacity: 0, stagger: 0.2 });
+    gsap.from("#mySidebar a", {opacity: 0, stagger: 0.2});
   }
 }
 
@@ -347,7 +347,7 @@ function submitted(e) {
 
 // The following code is for gsap Plugin.
 gsap.registerPlugin(ScrollTrigger);
-let animation = gsap.timeline();
+let animation= gsap.timeline();
 gsap.from("#h1", {
   x: "-100%",
   duration: 3,
@@ -369,17 +369,3 @@ gsap.from(".formsection", {
 });
 
 
-// Loader animations : 
-document.onreadystatechange = function () {
-  if (document.readyState !== "complete") {
-      document.querySelector(
-          "body").style.visibility = "hidden";
-      document.querySelector(
-          "#loader").style.visibility = "visible";
-  } else {
-      document.querySelector(
-          "#loader").style.display = "none";
-      document.querySelector(
-          "body").style.visibility = "visible";
-  }
-};

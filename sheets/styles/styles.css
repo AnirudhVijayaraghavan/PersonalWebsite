@@ -539,7 +539,6 @@ figcaption {
     transition: transform .2s ease-in-out;
     padding: 20px;
   }
-
   .mainprofilephotobottomright {
     display: none;
     margin-left: 5%;
@@ -1099,27 +1098,3 @@ label {
   color: black;
 }
 
-/* The following is to style the overlay ID, for loading :  */
-#loader {
-  border: 12px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 12px solid #444444;
-  width: 70px;
-  height: 70px;
-  animation: spin 1s linear infinite;
-}
-
-.center {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-
-@keyframes spin {
-  100% {
-    transform: rotate(360deg);
-  }
-}
