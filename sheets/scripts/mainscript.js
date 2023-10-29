@@ -119,12 +119,12 @@ function closeNav() {
 function openorclose() {
   if (state === "open") {
     closeNav();
-    
+
   }
   else if (state === "closed") {
-    
+
     openNav();
-    gsap.from("#mySidebar a", {opacity: 0, stagger: 0.2});
+    gsap.from("#mySidebar a", { opacity: 0, stagger: 0.2 });
   }
 }
 
@@ -347,7 +347,7 @@ function submitted(e) {
 
 // The following code is for gsap Plugin.
 gsap.registerPlugin(ScrollTrigger);
-let animation= gsap.timeline();
+let animation = gsap.timeline();
 gsap.from("#h1", {
   x: "-100%",
   duration: 3,
@@ -369,3 +369,25 @@ gsap.from(".formsection", {
 });
 
 
+const checkbox = document.getElementById("checkbox")
+checkbox.addEventListener("change", () => {
+  document.body.classList.toggle("light-mode");
+
+  document.getElementsByClassName("resume")[0].classList.toggle("light-mode-for-resume-btn");
+  var btpsb = document.getElementsByClassName("back-to-top")[0].style.background;
+  if (btpsb == "red") {
+    document.getElementsByClassName("back-to-top")[0].style.background = "white";
+  } else {
+    document.getElementsByClassName("back-to-top")[0].style.background = "red";
+  }
+  
+  
+  var dtac = document.querySelectorAll(".dtaclass");
+  for (var i = 0; i < dtac.length; i++) {
+    if (dtac[i].style.color === "black") {
+      dtac[i].style.color = "white";
+    } else {
+      dtac[i].style.color = "black";
+    }
+  }
+});

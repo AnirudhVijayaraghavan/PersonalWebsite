@@ -11,6 +11,11 @@ body {
   /* display: grid;
   grid-template-columns: auto 0px;  */
 }
+.light-mode {
+  background-color: white;
+  color: black;
+}
+
 
 @keyframes fadeInAnimation {
   0% {
@@ -19,6 +24,15 @@ body {
 
   100% {
     opacity: 1;
+  }
+}
+@keyframes fadeOutAnimation {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
   }
 }
 
@@ -431,13 +445,14 @@ dt a:hover {
 
 } */
 
-dt a {
+.dtaclass {
   color: white;
   position: relative;
   text-decoration: none;
 }
 
-dt a::before {
+
+.dtaclass::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -451,58 +466,11 @@ dt a::before {
   transition: transform .3s ease-in-out;
 }
 
-dt a:hover::before {
+.dtaclass:hover::before {
   transform-origin: left;
   transform: scaleX(1);
 }
 
-dt a:hover .walnutBBB {
-  display: block;
-  margin-right: 50px;
-}
-
-.walnutBBB {
-  display: none;
-  width: 300px;
-  position: relative;
-  float: right;
-
-}
-
-/* The following is to style the image gallery in certifications section. */
-
-.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: center;
-  width: 180px;
-}
-
-.gallery img {
-  width: 50%;
-  height: auto;
-}
-
-.gallery .mainimg {
-  width: 100%;
-  height: auto;
-}
-
-figcaption {
-  padding: 10px;
-  text-align: center;
-}
-
-.galleryhover {
-  display: none;
-  width: 300px;
-  position: absolute;
-  float: right;
-}
-
-.gallery:hover .galleryhover {
-  display: inline;
-}
 
 /* The following is to style the webpage in various screen sizes, using media query. */
 @media only screen and (max-width: 800px) {
@@ -539,6 +507,7 @@ figcaption {
     transition: transform .2s ease-in-out;
     padding: 20px;
   }
+
   .mainprofilephotobottomright {
     display: none;
     margin-left: 5%;
@@ -594,13 +563,35 @@ html {
 }
 
 /* The following is to style the contact me logo section. */
-.contactlogo {
-  width: 50px;
+#instalogo {
+  width: 100px;
   padding: 50px;
 }
 
 /* The following is to make the icons wiggle. */
-.contactlogo:hover {
+#instalogo:hover {
+  animation: effect 0.4s infinite;
+}
+/* The following is to style the contact me logo section. */
+#linkedinlogo {
+  width: 100px;
+  padding: 50px;
+}
+
+/* The following is to make the icons wiggle. */
+#linkedinlogo:hover {
+  animation: effect 0.4s infinite;
+}
+
+
+/* The following is to style the contact me logo section. */
+#githublogo {
+  width: 100px;
+  padding: 50px;
+}
+
+/* The following is to make the icons wiggle. */
+#githublogo:hover {
   animation: effect 0.4s infinite;
 }
 
@@ -647,18 +638,27 @@ back to top button. */
   opacity: 100%;
   transition: opacity 0.5s;
 }
-
 .resume:hover {
   opacity: 60%;
 }
-
-
 .resume-icon {
   width: 1.5rem;
   height: 1.5rem;
-  color: red;
 }
-
+.light-mode-for-resume-btn {
+  background: red;
+}
+.light-mode-for-btp-btn {
+  background: red;
+}
+.lightmodedarkmodebutton {
+  position: fixed;
+  right: 0rem;
+  top: 1rem;
+  cursor: pointer;
+  opacity: 100%;
+  transition: opacity 0.5s;
+}
 .back-to-top {
   position: fixed;
   right: .3rem;
@@ -671,22 +671,18 @@ back to top button. */
   opacity: 100%;
   transition: opacity 0.5s;
 }
-
 .back-to-top:hover {
   opacity: 60%;
 }
-
 .hidden {
   opacity: 0%;
 }
-
 .back-to-top-icon {
   width: 1.5rem;
   height: 1.5rem;
-  color: red;
+  color: black;
   transform: rotate(-0.25turn);
 }
-
 .progress-bar {
   height: 1rem;
   /* background: red; */
@@ -763,7 +759,7 @@ back to top button. */
   font-size: 20px;
   cursor: pointer;
   background-color: black;
-  color: white;
+  color: red;
   padding: 10px 15px;
   border: none;
   background-color: transparent;
@@ -847,7 +843,7 @@ footer {
 
 label {
   float: left;
-  width: 200px;
+  width: 300px;
 }
 
 /* DO NOT DELETE THESE 2. */
@@ -1098,3 +1094,41 @@ label {
   color: black;
 }
 
+/* 
+The following styles the dark mode light mode button */
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: #111;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 2px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-moon {color: #f1c40f;}
+
+.fa-sun {color: #f39c12;}
+
+.checkbox-label .ball {
+  background-color: #fff;
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
+}

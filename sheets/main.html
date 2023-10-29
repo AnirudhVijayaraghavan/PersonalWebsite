@@ -15,6 +15,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Quicksand:wght@300&display=swap"
         rel="stylesheet">
 
+    <!-- Adding FONTAWESOME CDN -->
+    <script src="https://kit.fontawesome.com/7118f55f6d.js" crossorigin="anonymous"></script>
+
     <!-- Script to install GreenSock's plugin and cdns. -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/Flip.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
@@ -50,6 +53,14 @@
                     </svg></a>
             </abbr>
         </button>
+        <div class="lightmodedarkmodebutton">
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="checkbox-label">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <span class="ball"></span>
+            </label>
+        </div>
         <button class="back-to-top hidden">
             <abbr title="Back to landing page.">
                 <svg xmlns="http://www.w3.org/2000/svg" class="back-to-top-icon" fill="none" viewBox="0 0 24 24"
@@ -66,7 +77,7 @@
 
         <div class="fixed-bg-initial">
 
-            <h1 class="scrollFade" id="h1">Hi !</h1>
+            <h1 class="scrollFade" id="h1">Hi!</h1>
             <img class="mainprofilephotoleft" src="PicturesIcons/IMG_3275.jpg" alt="Main profile photo"
                 style="border-style: solid; border-style: none solid solid none;">
             <img class="mainprofilephotoright" src="PicturesIcons/IMG-20220818-WA0020.jpg" alt="Main profile photo"
@@ -83,7 +94,6 @@
         <hr class="scrollFade" style="margin: 0 auto;">
         <br>
         <h3 class="scrollFade" id="centerh3">About me.</h3>
-
         <!-- <p class="scrollFade">I like long walks on the beach, playing the piano, and
             <abbr title="Benching, Deadlifting, Squatting, and Military Pressing ;)">BDSM</abbr>.
 
@@ -216,7 +226,7 @@
         <br>
         <hr class="scrollFade" style="margin: 0 auto;">
         <a name="workexp"></a>
-        <div class="fixed-bg-we">
+        <div class="fixed-bg-we" style="color: white;">
             <h3 class="scrollFade" style="margin-top: 0px; padding-top: 30px;">Work experience.</h3>
             <p class="scrollFade">
             <div class="wecont">
@@ -331,7 +341,7 @@
 
             <dl class="scrollFade dlheading">E-commerce website - MERN stack project.</dl>
             <dt class="scrollFade">
-                <a href="https://github.com/AnirudhVijayaraghavan/INFO-6150-Final-Project" target="_blank">
+                <a class="dtaclass" href="https://github.com/AnirudhVijayaraghavan/INFO-6150-Final-Project" target="_blank">
                     PopShop
                 </a>
 
@@ -344,7 +354,7 @@
                 integrated the back-end RESTful APIs with Stripe
                 payment gateway. Implemented search functionality, Login/Signup functions, a rich UI, bcrypt password
                 masking, JWT.</dd>
-            
+
             <br>
             <div class="scrollFade box" style="left: -25px">
                 <div class="container">
@@ -357,16 +367,17 @@
 
             <dl class="scrollFade dlheading">Trackr - A front end UI/UX prototype project.</dl>
             <dt class="scrollFade">
-                <a href="trackr.html" target="_blank">Trackr</a>
+                <a class="dtaclass" href="trackr.html" target="_blank">Trackr</a>
             </dt>
             <dd class="scrollFade">- Designed a front end working prototype of an ongoing passion project, using Figma.
             </dd>
-            <dd class="scrollFade">- Implemented industry standard tools / methodologies such as Problem Statements, 
-                Empathy Maps, POV Statements, Handsketches, Low Fidelity Wireframes, High Fidelity Wireframes, 
+            <dd class="scrollFade">- Implemented industry standard tools / methodologies such as Problem Statements,
+                Empathy Maps, POV Statements, Handsketches, Low Fidelity Wireframes, High Fidelity Wireframes,
                 and Usability Testing.
             </dd>
-            <dd class="scrollFade">- Conducted user interviews, Performed research on contrast and colour selection / modern UI/UX concepts,
-              and Enhanced the app further through usability testing feedback.
+            <dd class="scrollFade">- Conducted user interviews, Performed research on contrast and colour selection /
+                modern UI/UX concepts,
+                and Enhanced the app further through usability testing feedback.
             </dd>
             <br>
             <div class="scrollFade box-reverse" style="left: -25px">
@@ -378,37 +389,6 @@
                 </div>
             </div>
 
-            <!-- <dl class="scrollFade dlheading">My Certifications.</dl> -->
-            <!-- <dt>Information Technology : </dt>
-            <dd>- Google I.T. Support Certification</dd>
-            <dt>Programming Languages : </dt>
-            <dd>- Python Zero to Hero Certification</dd> -->
-            <!-- <dd>
-                <div class="scrollFade gallery"><img class="mainimg" src="PicturesIcons/python_linkedin.png" alt=""><img
-                        class="galleryhover" src="PicturesIcons/python_linkedin.png" alt="">
-                    <figcaption>Python Linkedin assessment.</figcaption>
-                </div>
-                <div class="scrollFade gallery"><img class="mainimg" src="PicturesIcons/fed_linkedin.png" alt=""><img
-                        class="galleryhover" src="PicturesIcons/fed_linkedin.png" alt="">
-                    <figcaption>Front end Linkedin assessment.</figcaption>
-                </div>
-                <div class="scrollFade gallery"><img class="mainimg" src="PicturesIcons/html_linkedin.png" alt=""><img
-                        class="galleryhover" src="PicturesIcons/html_linkedin.png" alt="">
-                    <figcaption>HTML Linkedin assessment.</figcaption>
-                </div>
-                <div class="scrollFade gallery"><img class="mainimg" src="PicturesIcons/google_IT_Support_Credly.png"
-                        alt=""><img class="galleryhover" src="PicturesIcons/google_IT_Support_Credly.png" alt="">
-                    <figcaption>Google IT support coursera Certification.</figcaption>
-                </div>
-
-            </dd> -->
-
-            <!-- <div class="scroll-reveal box1 left">
-                I came from left
-            </div> -->
-            <!-- Slideshow container -->
-
-
         </div>
         </p>
 
@@ -419,28 +399,19 @@
         <p class="scrollFade">
         <div class="contactmecont">
             <dl class="scrollFade dlheading">Check out my socials : </dl>
-            <dt class="scrollFade">
-                <a href="https://www.instagram.com/anirudh.vijayaraghavan/" target="_blank"><img class="contactlogo"
-                        src="PicturesIcons/instagram.png" alt="instagramlogo"></a>
-                <a href="https://www.linkedin.com/in/anirudh-vijayaraghavan/" target="_blank"><img class="contactlogo"
-                        src="PicturesIcons/linkedin.png" alt="linkedinlogo"></a>
-                <a href="https://github.com/AnirudhVijayaraghavan" target="_blank"><img class="contactlogo"
-                        src="PicturesIcons/github-mark-white.png" alt="githublogo"></a>
+            <dt>
+                <a class="dtaclass" href="https://www.instagram.com/anirudh.vijayaraghavan/" target="_blank"><img id="instalogo"
+                        src="PicturesIcons/iconmonstr-instagram-15-240-dark.png" alt="instagramlogo"></a>
+                <a class="dtaclass" href="https://www.linkedin.com/in/anirudh-vijayaraghavan/" target="_blank"><img id="linkedinlogo"
+                        src="PicturesIcons/iconmonstr-linkedin-5-240-dark.png" alt="linkedinlogo"></a>
+                <a class="dtaclass" href="https://github.com/AnirudhVijayaraghavan" target="_blank"><img id="githublogo"
+                        src="PicturesIcons/iconmonstr-github-5-240-dark.png" alt="githublogo"></a>
             </dt>
-            <!-- <dt class="scrollFade">Alternatively, you can shoot me an e-mail
-                <a class="mailbtn" href="mailto:anirudh1997@hotmail.com">
-                    <abbr title="This will redirect you to your computer's mailing app.">here</abbr>
-                </a>, or call me <a class="mailbtn" href="tel:+18579919949">
-                    <abbr title="This will redirect you to your computer's or phone's telephone app.">here</abbr>.
-                </a>
-            </dt> -->
-            <div id="scrollmag" class="scrollmag">
-                <img src="https://robohash.org/AnirudhVijayaragh" alt="robohash image">
-            </div>
-            <p id="centerh3" style="margin-left: -25px;">Looking to collaborate ? Let's connect.
-            </p>
+                        
             <br>
             <div class="formsection">
+                <p style="text-align: center;">Let's get in touch.
+                </p>
                 <form method="post" id="myForm">
                     <p>
                         <label for="firstName">First Name*:</label>
@@ -548,7 +519,7 @@
         <footer>
             <span id="footerspan">
                 Handcrafted with <span style="font-size:25px; color: red;">&#9829;</span> in Boston, Powered by
-                <img src="PicturesIcons/github-mark-white.png" alt="githublogo" style="width: 20px;">.<br>
+                <img src="PicturesIcons/github-mark-white.png" alt="githublogo" style="width: 25px; "><br>
 
                 &copy; Copyright Anirudh's Portfolio Website 2022
             </span>
