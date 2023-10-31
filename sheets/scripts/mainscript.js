@@ -98,6 +98,7 @@ function openNav() {
   document.getElementsByClassName("openbtn")[0].style.display = "none";
   document.getElementsByClassName("openbtn")[0].style.opacity = "100%";
   document.getElementsByTagName("footer")[0].style.width = "80%";
+  //document.getElementById("footerspan").style.marginLeft = "-20%"; //style="margin-left: -20%;
   document.getElementsByClassName("mainprofilephotoleft")[0].style.marginLeft = "2%";
   document.getElementsByClassName("mainprofilephotoright")[0].style.marginRight = "2%";
   document.getElementsByClassName("mainprofilephotobottomleft")[0].style.marginLeft = "2%";
@@ -110,6 +111,7 @@ function closeNav() {
   document.getElementById("main").style.marginLeft = "0";
   document.getElementsByClassName("openbtn")[0].style.display = "inline";
   document.getElementsByTagName("footer")[0].style.width = "100%";
+  //document.getElementById("footerspan").style.marginLeft = "0%";
   document.getElementsByClassName("mainprofilephotoleft")[0].style.marginLeft = "15%";
   document.getElementsByClassName("mainprofilephotoright")[0].style.marginRight = "10%";
   document.getElementsByClassName("mainprofilephotobottomleft")[0].style.marginLeft = "5%";

@@ -286,12 +286,20 @@ h2 {
   font-family: 'Quicksand', sans-serif;
   text-align: center;
   padding: 60px;
+  
   /* animation-duration: 3s;
   animation-timing-function: ease-in-out;
   animation-delay: 0s;
   animation-iteration-count: 1;
   animation-name: slideInRight; */
   font-size: 50px;
+  /* background-image: linear-gradient(to right, rgb(255, 38, 0), rgb(211, 99, 177));
+  background-color: white;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent; */
 }
 
 ul {
@@ -594,6 +602,18 @@ html {
 #githublogo:hover {
   animation: effect 0.4s infinite;
 }
+
+#bmaclogo {
+  width: 100px;
+  padding: 50px;
+  border-radius: 100%;
+}
+
+/* The following is to make the icons wiggle. */
+#bmaclogo:hover {
+  animation: effect 0.4s infinite;
+}
+
 
 @keyframes effect {
   0% {
