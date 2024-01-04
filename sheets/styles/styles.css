@@ -813,13 +813,14 @@ footer {
 /* The following is to keep the background image of various sections fixed using background attachment property. */
 .fixed-bg-we {
   margin: 0 0;
-  background-image: url("../PicturesIcons/tim-arterbury-EVGRjxDA7WA-unsplash.jpg");
+  background-image: url("../PicturesIcons/andrew-schultz-EAlbsTo6nuQ-unsplash.jpg");
   min-height: 600px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 30px;
+  opacity: 1;
 }
 
 .fixed-bg-story {
